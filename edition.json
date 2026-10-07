@@ -1,0 +1,20 @@
+{
+  "edition": "dark-with-proof-roadmap",
+  "updated": "2026-10-07",
+  "duration_seconds": 1129,
+  "chapter_count": 13,
+  "opening_roadmap_seconds": 87.466016,
+  "narration": "ElevenLabs Sarah, Eleven v4",
+  "video": {
+    "file": "Quasi-Riemann-Explained-Sarah.mp4",
+    "sha256": "22d4566e95f9f4d7d2bf6b22ef7ccdb9d47b08d52729ff80feee3f560b6ee59a",
+    "bytes": 51440064,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30
+  },
+  "original_chapters_preserved": 12,
+  "original_narration_passages_preserved": 39,
+  "new_narration_passages": 2,
+  "independent_proof_verification": false
+}

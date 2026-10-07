@@ -1,1218 +1,1324 @@
 1
-00:00:01,027 --> 00:00:04,027
+00:00:00,947 --> 00:00:05,187
+Before we dive in, here is
+the proof's central idea.
+
+2
+00:00:05,187 --> 00:00:10,227
+The goal is to exclude every zero
+to the right of one fixed boundary.
+
+3
+00:00:10,227 --> 00:00:14,067
+The strategy is to study the
+reciprocal of an L function.
+
+4
+00:00:14,067 --> 00:00:17,427
+Its arithmetic expansion
+contains Möbius signs.
+
+5
+00:00:17,427 --> 00:00:21,627
+If those signs cancel strongly
+enough, an integral transform lets us
+
+6
+00:00:21,787 --> 00:00:25,987
+continue the reciprocal into a larger
+region, where it is holomorphic:
+
+7
+00:00:25,987 --> 00:00:30,347
+it has no poles. But a zero of the
+original L function would force
+
+8
+00:00:30,347 --> 00:00:32,147
+a pole of its reciprocal.
+
+9
+00:00:32,147 --> 00:00:36,147
+That contradiction is the bridge
+from arithmetic cancellation to a
+
+10
+00:00:36,147 --> 00:00:37,427
+zero-free region.
+
+11
+00:00:39,460 --> 00:00:42,980
+How does the October manuscript
+get that cancellation?
+
+12
+00:00:42,980 --> 00:00:46,940
+First, place the target sum
+inside a larger family.
+
+13
+00:00:47,020 --> 00:00:50,220
+Next, bound the family's total squared size:
+
+14
+00:00:50,220 --> 00:00:54,700
+a shared energy budget. Special
+sixth-power rows almost repeat the
+
+15
+00:00:54,820 --> 00:00:58,740
+target, so a large target would
+spend that budget many times.
+
+16
+00:00:58,740 --> 00:01:02,740
+Count those repetitions, divide the
+budget, and take a square root:
+
+17
+00:01:02,740 --> 00:01:07,540
+this gives the eleven-twelfths exponent,
+with arbitrarily small losses.
+
+18
+00:01:07,540 --> 00:01:12,020
+A Mellin transform then turns that
+bound into the zero-free region.
+
+19
+00:01:12,020 --> 00:01:16,020
+The difficult family estimate comes
+from Poisson summation, cubic theta
+
+20
+00:01:16,020 --> 00:01:20,740
+transformations, a quadratic large
+sieve, and a shrinking recursion.
+
+21
+00:01:20,740 --> 00:01:24,500
+We will unpack each step, then
+explain the distinct refinement that
+
+22
+00:01:24,500 --> 00:01:25,940
+reaches seven eighths.
+
+23
+00:01:28,493 --> 00:01:31,493
 You already know what the
 Riemann hypothesis says.
 
-2
-00:00:04,147 --> 00:00:06,667
+24
+00:01:31,613 --> 00:01:34,133
 So our question is more specific:
 
-3
-00:00:06,707 --> 00:00:10,707
+25
+00:01:34,173 --> 00:01:38,173
 what would it mean to exclude every
 zero to the right of one fixed
 
-4
-00:00:10,707 --> 00:00:14,707
+26
+00:01:38,173 --> 00:01:42,173
 vertical line? We will explain the
 claims of these two manuscripts,
 
-5
-00:00:14,707 --> 00:00:18,587
+27
+00:01:42,173 --> 00:01:46,053
 and then actually derive where
 eleven twelfths comes from.
 
-6
-00:00:18,587 --> 00:00:22,467
+28
+00:01:46,053 --> 00:01:49,933
 This is an explanation of their
 argument, not an independent proof
 
-7
-00:00:22,467 --> 00:00:22,947
+29
+00:01:49,933 --> 00:01:50,413
 audit.
 
-8
-00:00:24,993 --> 00:00:28,673
+30
+00:01:52,459 --> 00:01:56,139
 Write a complex number as sigma plus i t.
 
-9
-00:00:28,673 --> 00:00:32,073
+31
+00:01:56,139 --> 00:01:59,539
 Sigma is horizontal; t is vertical.
 
-10
-00:00:32,073 --> 00:00:36,113
+32
+00:01:59,539 --> 00:02:03,579
 This surface shows actual numerical
 values of the zeta function, with
 
-11
-00:00:36,113 --> 00:00:39,473
+33
+00:02:03,579 --> 00:02:06,939
 height equal to log of
 one plus its magnitude.
 
-12
-00:00:39,473 --> 00:00:43,833
+34
+00:02:06,939 --> 00:02:11,299
 Valleys mark small values. The
 highlighted point is the first known
 
-13
-00:00:43,873 --> 00:00:48,473
+35
+00:02:11,339 --> 00:02:15,939
 nontrivial zero. A finite plot
 illustrates the function, but cannot
 
-14
-00:00:48,593 --> 00:00:50,593
+36
+00:02:16,059 --> 00:02:18,059
 establish a statement at every height.
 
-15
-00:00:52,547 --> 00:00:57,027
+37
+00:02:20,013 --> 00:02:24,493
 Classical zero-free regions narrow
 toward the line sigma equals one
 
-16
-00:00:57,027 --> 00:01:01,387
+38
+00:02:24,493 --> 00:02:28,853
 as the height increases. These
 papers claim fixed boundaries:
 
-17
-00:01:01,387 --> 00:01:05,267
+39
+00:02:28,853 --> 00:02:32,733
 eleven twelfths and, more
 strongly, seven eighths.
 
-18
-00:01:05,267 --> 00:01:08,107
+40
+00:02:32,733 --> 00:02:35,573
 The second excludes a wider half-plane.
 
-19
-00:01:08,227 --> 00:01:12,227
+41
+00:02:35,693 --> 00:02:39,693
 Reflection symmetry would then confine
 the nontrivial zeta zeros between
 
-20
-00:01:12,227 --> 00:01:14,227
+42
+00:02:39,693 --> 00:02:41,693
 one eighth and seven eighths.
 
-21
-00:01:14,227 --> 00:01:17,027
+43
+00:02:41,693 --> 00:02:44,493
 The critical line remains
 a much stronger target.
 
-22
-00:01:19,559 --> 00:01:24,999
+44
+00:02:47,025 --> 00:02:52,465
 For sigma greater than one, zeta is
 both a sum over all positive integers
 
-23
-00:01:24,999 --> 00:01:27,359
+45
+00:02:52,465 --> 00:02:54,825
 and a product over primes.
 
-24
-00:01:27,359 --> 00:01:31,359
+46
+00:02:54,825 --> 00:02:58,825
 Expanding each geometric series in
 the product lists every integer
 
-25
-00:01:31,399 --> 00:01:34,839
+47
+00:02:58,865 --> 00:03:02,305
 exactly once, by unique prime factorization.
 
-26
-00:01:34,839 --> 00:01:37,399
+48
+00:03:02,305 --> 00:03:04,865
 This is the entry point for primes.
 
-27
-00:01:37,399 --> 00:01:40,999
+49
+00:03:04,865 --> 00:03:08,465
 Inside the critical strip we
 use analytic continuation;
 
-28
-00:01:40,999 --> 00:01:44,919
+50
+00:03:08,465 --> 00:03:12,385
 the displayed infinite product is not
 being asserted to converge there.
 
-29
-00:01:46,879 --> 00:01:50,799
+51
+00:03:14,345 --> 00:03:18,265
 A Dirichlet character is a
 periodic multiplicative weight.
 
-30
-00:01:50,879 --> 00:01:56,279
+52
+00:03:18,345 --> 00:03:23,745
 For example, this character modulo
 four assigns zero to even integers,
 
-31
-00:01:56,279 --> 00:02:01,039
+53
+00:03:23,745 --> 00:03:28,505
 plus one to integers congruent to one,
 and minus one to integers congruent
 
-32
-00:02:01,039 --> 00:02:05,159
+54
+00:03:28,505 --> 00:03:32,625
 to three. Inserting these
 weights gives an L function.
 
-33
-00:02:05,239 --> 00:02:09,119
+55
+00:03:32,705 --> 00:03:36,585
 Comparing such weighted prime sums
 helps separate primes in different
 
-34
-00:02:09,119 --> 00:02:10,559
+56
+00:03:36,585 --> 00:03:38,025
 arithmetic progressions.
 
-35
-00:02:12,569 --> 00:02:16,272
+57
+00:03:40,035 --> 00:03:43,738
 The manuscripts claim their boundary
 for every Dirichlet character,
 
-36
-00:02:16,272 --> 00:02:19,152
+58
+00:03:43,738 --> 00:03:46,618
 not just the trivial
 character that gives zeta.
 
-37
-00:02:19,152 --> 00:02:22,912
+59
+00:03:46,618 --> 00:03:50,378
 The same numerical boundary works
 independently of the conductor and
 
-38
-00:02:22,912 --> 00:02:27,392
+60
+00:03:50,378 --> 00:03:54,858
 the height. That does not mean every
 constant in the proof is uniform:
 
-39
-00:02:27,392 --> 00:02:30,472
+61
+00:03:54,858 --> 00:03:57,938
 constants may depend on the
 fixed target character.
 
-40
-00:02:30,472 --> 00:02:35,072
+62
+00:03:57,938 --> 00:04:02,538
 It is the exponent, and ultimately the
 boundary, that must remain common.
 
-41
-00:02:37,544 --> 00:02:42,504
+63
+00:04:05,011 --> 00:04:09,971
 The Möbius function is zero when a
 square of a prime divides the integer.
 
-42
-00:02:42,504 --> 00:02:47,104
+64
+00:04:09,971 --> 00:04:14,571
 Otherwise it is minus one to the
 number of distinct prime factors.
 
-43
-00:02:47,224 --> 00:02:52,184
+65
+00:04:14,691 --> 00:04:19,651
 Thus six has value plus one, thirty
 has value minus one, and twelve
 
-44
-00:02:52,184 --> 00:02:57,144
+66
+00:04:19,651 --> 00:04:24,611
 has value zero. For sigma greater
 than one, replacing each Euler factor
 
-45
-00:02:57,144 --> 00:03:00,584
+67
+00:04:24,611 --> 00:04:28,051
 by its inverse produces the
 series for one over zeta.
 
-46
-00:03:02,704 --> 00:03:06,544
+68
+00:04:30,171 --> 00:04:34,011
 Let M of x be the cumulative
 sum of these signs.
 
-47
-00:03:06,544 --> 00:03:11,024
+69
+00:04:34,011 --> 00:04:38,491
 This curve is computed from actual
 Möbius values, not a simulated random
 
-48
-00:03:11,024 --> 00:03:14,264
+70
+00:04:38,491 --> 00:04:41,731
 walk. The trivial bound is order x.
 
-49
-00:03:14,264 --> 00:03:18,984
+71
+00:04:41,731 --> 00:04:46,451
 A bound of x to the power alpha, with
 alpha less than one, would quantify
 
-50
-00:03:18,984 --> 00:03:23,504
+72
+00:04:46,451 --> 00:04:50,971
 cancellation. We cannot infer that
 bound from a short plotted sample.
 
-51
-00:03:25,477 --> 00:03:30,597
+73
+00:04:52,944 --> 00:04:58,064
 Partial summation writes the reciprocal
 of zeta as s times an integral
 
-52
-00:03:30,597 --> 00:03:35,277
+74
+00:04:58,064 --> 00:05:02,744
 of M of x against x to the
 power minus s minus one.
 
-53
-00:03:35,277 --> 00:03:39,957
+75
+00:05:02,744 --> 00:05:07,424
 If M grows no faster than x to alpha,
 the integral converges locally
 
-54
-00:03:39,957 --> 00:03:42,757
+76
+00:05:07,424 --> 00:05:10,224
 uniformly when sigma exceeds alpha.
 
-55
-00:03:42,757 --> 00:03:45,797
+77
+00:05:10,224 --> 00:05:13,264
 It therefore defines a
 holomorphic function there.
 
-56
-00:03:45,797 --> 00:03:49,677
+78
+00:05:13,264 --> 00:05:17,144
 But a zero of zeta would force
 its reciprocal to have a pole.
 
-57
-00:03:49,677 --> 00:03:51,877
+79
+00:05:17,144 --> 00:05:19,344
 Those two facts cannot coexist.
 
-58
-00:03:54,396 --> 00:03:58,703
+80
+00:05:21,862 --> 00:05:26,169
 The argument works in the number
 field Q of square root minus three.
 
-59
-00:03:58,983 --> 00:04:04,223
+81
+00:05:26,449 --> 00:05:31,689
 Its integers are a plus b omega,
 where omega is a cube root of one.
 
-60
-00:04:04,583 --> 00:04:08,103
+82
+00:05:32,049 --> 00:05:35,569
 In the complex plane they
 form this triangular lattice.
 
-61
-00:04:08,183 --> 00:04:12,463
+83
+00:05:35,649 --> 00:05:39,929
 The norm is a squared
 minus a b plus b squared.
 
-62
-00:04:12,463 --> 00:04:16,703
+84
+00:05:39,929 --> 00:05:44,169
 The geometry makes cubic and sextic
 residue characters natural tools
 
-63
-00:04:16,703 --> 00:04:17,623
+85
+00:05:44,169 --> 00:05:45,089
 for the problem.
 
-64
-00:04:19,576 --> 00:04:24,136
+86
+00:05:47,043 --> 00:05:51,603
 The paper sums over nonzero integral
 ideals, with an ideal version
 
-65
-00:04:24,136 --> 00:04:27,776
+87
+00:05:51,603 --> 00:05:55,243
 of Möbius and a finite-order
 Hecke character, nu.
 
-66
-00:04:28,216 --> 00:04:31,816
+88
+00:05:55,683 --> 00:05:59,283
 You can think of nu as the multiplicative
 phase weight in this larger
 
-67
-00:04:31,816 --> 00:04:37,136
+89
+00:05:59,283 --> 00:06:04,603
 arithmetic setting. A smooth window
 W selects norms near a scale D.
 
-68
-00:04:37,496 --> 00:04:40,976
+90
+00:06:04,963 --> 00:06:08,443
 The resulting sum A one has roughly D terms.
 
-69
-00:04:41,336 --> 00:04:45,536
+91
+00:06:08,803 --> 00:06:13,003
 Primes above two and three and the
 conductor are excluded as specified
 
-70
-00:04:45,536 --> 00:04:46,296
+92
+00:06:13,003 --> 00:06:13,763
 in the paper.
 
-71
-00:04:48,323 --> 00:04:53,323
+93
+00:06:15,789 --> 00:06:20,789
 Now insert a sextic residue character
 depending on a new variable u.
 
-72
-00:04:53,323 --> 00:04:57,843
+94
+00:06:20,789 --> 00:06:25,309
 Its nonzero values are sixth roots
 of one, shown around this circle.
 
-73
-00:04:57,843 --> 00:05:01,443
+95
+00:06:25,309 --> 00:06:28,909
 Changing u produces a family of sums A u.
 
-74
-00:05:01,443 --> 00:05:04,803
+96
+00:06:28,909 --> 00:06:32,269
 The original target is the row u equals one.
 
-75
-00:05:04,803 --> 00:05:08,523
+97
+00:06:32,269 --> 00:06:35,989
 The strategy is to control the
 combined squared size of the entire
 
-76
-00:05:08,763 --> 00:05:11,363
+98
+00:06:36,229 --> 00:06:38,829
 family, then recover that particular row.
 
-77
-00:05:13,921 --> 00:05:17,521
+99
+00:06:41,388 --> 00:06:44,988
 Here is the difficult estimate
 the October paper claims.
 
-78
-00:05:17,761 --> 00:05:22,321
+100
+00:06:45,228 --> 00:06:49,788
 Sum the squared magnitudes
 of A u over norms up to H.
 
-79
-00:05:22,321 --> 00:05:27,001
+101
+00:06:49,788 --> 00:06:54,468
 The answer is at most a constant
 times D to one plus epsilon, times
 
-80
-00:05:27,041 --> 00:05:32,001
+102
+00:06:54,508 --> 00:06:59,468
 H, with H equal to D to one
 plus a small positive theta.
 
-81
-00:05:32,001 --> 00:05:36,201
+103
+00:06:59,468 --> 00:07:03,668
 Since there are order H rows, the
 average squared magnitude is about
 
-82
-00:05:36,201 --> 00:05:38,881
+104
+00:07:03,668 --> 00:07:06,348
 D, allowing a tiny exponent loss.
 
-83
-00:05:40,841 --> 00:05:46,001
+105
+00:07:08,308 --> 00:07:13,468
 The bars are a schematic energy
 budget, not computed character sums.
 
-84
-00:05:46,081 --> 00:05:49,681
+106
+00:07:13,548 --> 00:07:17,148
 Average square-root cancellation
 does not say that every individual
 
-85
-00:05:49,721 --> 00:05:52,041
+107
+00:07:17,188 --> 00:07:19,508
 sum has size square root D.
 
-86
-00:05:52,041 --> 00:05:55,561
+108
+00:07:19,508 --> 00:07:23,028
 A few large outliers could
 fit inside the total budget.
 
-87
-00:05:55,561 --> 00:06:00,481
+109
+00:07:23,028 --> 00:07:27,948
 This distinction matters: extracting
 the target row using only a typical-row
 
-88
-00:06:00,641 --> 00:06:02,121
+110
+00:07:28,108 --> 00:07:29,588
 argument would be invalid.
 
-89
-00:06:04,075 --> 00:06:08,675
+111
+00:07:31,541 --> 00:07:36,141
 The next move is to find many
 rows that almost reproduce A one.
 
-90
-00:06:08,675 --> 00:06:12,835
+112
+00:07:36,141 --> 00:07:40,301
 If A one were huge, all those
 rows would consume energy.
 
-91
-00:06:12,835 --> 00:06:16,342
+113
+00:07:40,301 --> 00:07:43,808
 The total mean-square estimate
 then limits its size.
 
-92
-00:06:16,342 --> 00:06:19,915
+114
+00:07:43,808 --> 00:07:47,381
 The sixth-power rows provide
 exactly this repetition.
 
-93
-00:06:19,915 --> 00:06:23,995
+115
+00:07:47,381 --> 00:07:51,461
 That is the bridge from an average
 theorem to a bound on one prescribed
 
-94
-00:06:23,995 --> 00:06:24,875
+116
+00:07:51,461 --> 00:07:52,341
 L function.
 
-95
-00:06:27,340 --> 00:06:32,500
+117
+00:07:54,807 --> 00:07:59,967
 Take u equal to p to the sixth
 power, where p is a prime element in
 
-96
-00:06:32,500 --> 00:06:37,180
+118
+00:07:59,967 --> 00:08:04,647
 the Eisenstein integers. Away from
 p, a sixth-order character raised
 
-97
-00:06:37,180 --> 00:06:39,420
+119
+00:08:04,647 --> 00:08:06,887
 to the sixth power is one.
 
-98
-00:06:39,420 --> 00:06:42,900
+120
+00:08:06,887 --> 00:08:10,367
 When p divides the summation
 index, it is zero.
 
-99
-00:06:43,054 --> 00:06:47,540
+121
+00:08:10,521 --> 00:08:15,007
 So A of p to the sixth differs from
 A one only through those omitted
 
-100
-00:06:47,580 --> 00:06:52,260
+122
+00:08:15,047 --> 00:08:19,727
 multiples. For prime norm about Y,
 their total contribution is bounded
 
-101
-00:06:52,260 --> 00:06:54,060
+123
+00:08:19,727 --> 00:08:21,527
 by order D over Y.
 
-102
-00:06:56,064 --> 00:07:00,567
+124
+00:08:23,530 --> 00:08:28,033
 A prime with norm at most Y gives a
 sixth-power row with norm at most
 
-103
-00:07:00,567 --> 00:07:05,047
+125
+00:08:28,033 --> 00:08:32,513
 Y to the sixth. Set Y equal
 to H to the one sixth.
 
-104
-00:07:05,047 --> 00:07:09,687
+126
+00:08:32,513 --> 00:08:37,153
 The prime ideal theorem supplies
 order Y over log Y such rows.
 
-105
-00:07:09,967 --> 00:07:12,847
+127
+00:08:37,433 --> 00:08:40,313
 Divide the full energy budget by this number.
 
-106
-00:07:12,847 --> 00:07:16,647
+128
+00:08:40,313 --> 00:08:44,113
 Squaring the omission error gives
 the second term displayed here.
 
-107
-00:07:16,647 --> 00:07:19,527
+129
+00:08:44,113 --> 00:08:46,993
 Logarithms are absorbed into D to epsilon.
 
-108
-00:07:21,473 --> 00:07:26,793
+130
+00:08:48,940 --> 00:08:54,260
 Ignoring only the arbitrarily small
 exponent losses, H is D to one
 
-109
-00:07:26,833 --> 00:07:31,473
+131
+00:08:54,300 --> 00:08:58,940
 plus theta. The first term
 is D times H to five sixths.
 
-110
-00:07:31,473 --> 00:07:35,553
+132
+00:08:58,940 --> 00:09:03,020
 Its exponent is eleven sixths
 plus five theta over six.
 
-111
-00:07:35,553 --> 00:07:37,393
+133
+00:09:03,020 --> 00:09:04,860
 Now take the square root...
 
-112
-00:07:37,393 --> 00:07:40,433
+134
+00:09:04,860 --> 00:09:07,900
 eleven twelfths plus five theta over twelve.
 
-113
-00:07:40,433 --> 00:07:44,753
+135
+00:09:07,900 --> 00:09:12,220
 The error contributes exponent five
 sixths minus theta over six, which
 
-114
-00:07:44,753 --> 00:07:45,553
+136
+00:09:12,220 --> 00:09:13,020
 is smaller.
 
-115
-00:07:47,507 --> 00:07:52,227
+137
+00:09:14,973 --> 00:09:19,693
 For any requested positive epsilon,
 choose theta sufficiently small,
 
-116
-00:07:52,227 --> 00:07:56,307
+138
+00:09:19,693 --> 00:09:23,773
 and then choose the loss in the
 mean-square estimate sufficiently small.
 
-117
-00:07:56,307 --> 00:07:59,787
+139
+00:09:23,773 --> 00:09:27,253
 This yields D to eleven
 twelfths plus epsilon.
 
-118
-00:08:00,040 --> 00:08:02,627
+140
+00:09:27,506 --> 00:09:30,093
 We have not set theta equal to zero;
 
-119
-00:08:02,627 --> 00:08:04,867
+141
+00:09:30,093 --> 00:09:32,333
 later recursion needs it positive.
 
-120
-00:08:04,867 --> 00:08:07,827
+142
+00:09:32,333 --> 00:09:35,293
 The constant may worsen as epsilon shrinks.
 
-121
-00:08:07,827 --> 00:08:11,747
+143
+00:09:35,293 --> 00:09:39,213
 The zero-free boundary is the open
 half-plane strictly beyond eleven
 
-122
-00:08:11,747 --> 00:08:12,467
+144
+00:09:39,213 --> 00:09:39,933
 twelfths.
 
-123
-00:08:14,995 --> 00:08:19,898
+145
+00:09:42,462 --> 00:09:47,365
 The paper uses smooth sums, so the
 natural transform is Mellin rather
 
-124
-00:08:19,898 --> 00:08:22,578
+146
+00:09:47,365 --> 00:09:50,045
 than the sharp-cutoff
 integral we saw earlier.
 
-125
-00:08:22,778 --> 00:08:28,498
+147
+00:09:50,245 --> 00:09:55,965
 Integrate A one of D against D to
 minus s, with measure d D over D.
 
-126
-00:08:28,938 --> 00:08:33,258
+148
+00:09:56,405 --> 00:10:00,725
 The cancellation bound gives convergence
 at large D when sigma exceeds
 
-127
-00:08:33,258 --> 00:08:37,458
+149
+00:10:00,725 --> 00:10:04,925
 eleven twelfths. Compact support
 of the window handles small D.
 
-128
-00:08:37,818 --> 00:08:41,338
+150
+00:10:05,285 --> 00:10:08,805
 Local uniform convergence makes
 the transform holomorphic.
 
-129
-00:08:43,305 --> 00:08:47,825
+151
+00:10:10,772 --> 00:10:15,292
 In the original region sigma greater
 than one, termwise integration
 
-130
-00:08:47,865 --> 00:08:53,225
+152
+00:10:15,332 --> 00:10:20,692
 identifies this transform with W hat
 of s divided by the Hecke L function,
 
-131
-00:08:53,225 --> 00:08:56,265
+153
+00:10:20,692 --> 00:10:23,732
 with finitely many Euler factors deleted.
 
-132
-00:08:56,265 --> 00:08:59,945
+154
+00:10:23,732 --> 00:10:27,412
 These factors are nonzero in the
 half-plane under discussion.
 
-133
-00:08:59,945 --> 00:09:02,585
+155
+00:10:27,412 --> 00:10:30,052
 The identity then extends analytically.
 
-134
-00:09:02,585 --> 00:09:06,185
+156
+00:10:30,052 --> 00:10:33,652
 But we still need to prevent the
 numerator from accidentally cancelling
 
-135
-00:09:06,185 --> 00:09:06,985
+157
+00:10:33,652 --> 00:10:34,452
 a zero.
 
-136
-00:09:09,018 --> 00:09:13,498
+158
+00:10:36,485 --> 00:10:40,965
 Suppose rho were a zero to
 the right of eleven twelfths.
 
-137
-00:09:13,498 --> 00:09:17,898
+159
+00:10:40,965 --> 00:10:45,365
 Choose a nonzero, nonnegative smooth
 function phi supported between
 
-138
-00:09:17,898 --> 00:09:24,018
+160
+00:10:45,365 --> 00:10:51,485
 one and two, and set W of y equal
 to y to minus rho times phi of y.
 
-139
-00:09:24,172 --> 00:09:28,698
+161
+00:10:51,639 --> 00:10:56,165
 Then W hat at rho is the
 positive integral of phi over y.
 
-140
-00:09:28,698 --> 00:09:31,378
+162
+00:10:56,165 --> 00:10:58,845
 The estimate permits this complex window.
 
-141
-00:09:31,498 --> 00:09:33,018
+163
+00:10:58,965 --> 00:11:00,485
 Constants may depend on it;
 
-142
-00:09:33,018 --> 00:09:34,618
+164
+00:11:00,485 --> 00:11:02,085
 the exponent does not.
 
-143
-00:09:36,652 --> 00:09:41,052
+165
+00:11:04,118 --> 00:11:08,518
 Multiplying the continued identity
 by L gives L times the holomorphic
 
-144
-00:09:41,052 --> 00:09:46,332
+166
+00:11:08,518 --> 00:11:13,798
 transform equals W hat. At the
 supposed zero, the left side is zero
 
-145
-00:09:46,332 --> 00:09:49,052
+167
+00:11:13,798 --> 00:11:16,518
 while the right side is strictly positive.
 
-146
-00:09:49,052 --> 00:09:52,892
+168
+00:11:16,518 --> 00:11:20,358
 This is the contradiction! Notice
 what carried the reasoning:
 
-147
-00:09:52,892 --> 00:09:57,212
+169
+00:11:20,358 --> 00:11:24,678
 a bound on all scales and analytic
 continuation, not checking zeros
 
-148
-00:09:57,212 --> 00:10:01,132
+170
+00:11:24,678 --> 00:11:28,598
 numerically and not moving a
 contour across an unaccounted pole.
 
-149
-00:10:03,603 --> 00:10:07,443
+171
+00:11:31,070 --> 00:11:34,910
 We have derived the boundary
 assuming the mean-square theorem.
 
-150
-00:10:07,443 --> 00:10:09,603
+172
+00:11:34,910 --> 00:11:37,070
 Now we look inside its proof.
 
-151
-00:10:09,603 --> 00:10:13,843
+173
+00:11:37,070 --> 00:11:41,310
 Expanding the square and applying
 Poisson summation in the row variable
 
-152
-00:10:13,843 --> 00:10:17,603
+174
+00:11:41,310 --> 00:11:45,070
 replaces arithmetic positions
 by Fourier frequencies.
 
-153
-00:10:17,603 --> 00:10:21,923
+175
+00:11:45,070 --> 00:11:49,390
 Finite Fourier transforms of sextic
 characters produce Gauss sums.
 
-154
-00:10:21,923 --> 00:10:26,163
+176
+00:11:49,390 --> 00:11:53,630
 A Gauss–Jacobi identity combines
 these with the Möbius coefficients,
 
-155
-00:10:26,163 --> 00:10:28,643
+177
+00:11:53,630 --> 00:11:56,110
 producing cubic Gauss-sum coefficients.
 
-156
-00:10:30,683 --> 00:10:34,843
+178
+00:11:58,150 --> 00:12:02,310
 Those cubic Gauss sums occur as
 Fourier coefficients of a cubic theta
 
-157
-00:10:34,843 --> 00:10:38,883
+179
+00:12:02,310 --> 00:12:06,350
 function. This supplies transformation
 laws that were invisible in
 
-158
-00:10:38,883 --> 00:10:43,563
+180
+00:12:06,350 --> 00:12:11,030
 the original sum. To use them, the
 paper completes squarefree indices
 
-159
-00:10:43,563 --> 00:10:46,643
+181
+00:12:11,030 --> 00:12:14,110
 n to indices n times b cubed.
 
-160
-00:10:46,660 --> 00:10:49,323
+182
+00:12:14,127 --> 00:12:16,790
 The extra cube factors are essential.
 
-161
-00:10:49,323 --> 00:10:51,483
+183
+00:12:16,790 --> 00:12:18,950
 This diagram is a structural map;
 
-162
-00:10:51,483 --> 00:10:55,603
+184
+00:12:18,950 --> 00:12:23,070
 it suppresses local factors,
 coprimality conditions, and auxiliary
 
-163
-00:10:55,803 --> 00:10:56,403
+185
+00:12:23,270 --> 00:12:23,870
 characters.
 
-164
-00:10:58,597 --> 00:11:02,323
+186
+00:12:26,064 --> 00:12:29,790
 After the theta transformation,
 the relevant sextic phases combine
 
-165
-00:11:02,323 --> 00:11:05,123
+187
+00:12:29,790 --> 00:12:32,590
 into a third power, which is quadratic.
 
-166
-00:11:05,123 --> 00:11:09,363
+188
+00:12:32,590 --> 00:12:36,830
 The quadratic large sieve bounds a
 mean square using a row-plus-column
 
-167
-00:11:09,363 --> 00:11:12,883
+189
+00:12:36,830 --> 00:12:40,350
 scale, M plus L, up to small powers.
 
-168
-00:11:12,883 --> 00:11:16,683
+190
+00:12:40,350 --> 00:12:44,150
 This avoids the additional term that
 can appear in a general higher-order
 
-169
-00:11:16,763 --> 00:11:20,883
+191
+00:12:44,230 --> 00:12:48,350
 character estimate. The gain is
 quantitative, not simply a new way
 
-170
-00:11:20,883 --> 00:11:22,323
+192
+00:12:48,350 --> 00:12:49,790
 of writing the same sum.
 
-171
-00:11:24,303 --> 00:11:28,783
+193
+00:12:51,770 --> 00:12:56,250
 The completed sum includes cube
 factors that were not in the target.
 
-172
-00:11:28,783 --> 00:11:34,143
+194
+00:12:56,250 --> 00:13:01,610
 Möbius inversion removes them. Small
 cube divisors can be bounded directly.
 
-173
-00:11:34,143 --> 00:11:38,143
+195
+00:13:01,610 --> 00:13:05,610
 Large cube divisors leave a remainder,
 and that remainder still has
 
-174
-00:11:38,143 --> 00:11:41,716
+196
+00:13:05,610 --> 00:13:09,183
 to be controlled. This is
 where the recursion enters.
 
-175
-00:11:41,716 --> 00:11:45,743
+197
+00:13:09,183 --> 00:13:13,210
 The transformation and these remainder
 estimates are deep inputs claimed
 
-176
-00:11:45,743 --> 00:11:49,903
+198
+00:13:13,210 --> 00:13:17,370
 by the manuscript; our animations
 do not independently prove them.
 
-177
-00:11:52,368 --> 00:11:56,808
+199
+00:13:19,836 --> 00:13:24,276
 Call the row scale script
 H and the column scale X.
 
-178
-00:11:56,808 --> 00:12:01,248
+200
+00:13:24,276 --> 00:13:28,716
 In the initial dual problem, they
 are about D to one minus theta and
 
-179
-00:12:01,248 --> 00:12:06,208
+201
+00:13:28,716 --> 00:13:33,676
 D. A remaining cube divisor of norm
 B shortens the column scale to
 
-180
-00:12:06,208 --> 00:12:10,768
+202
+00:13:33,676 --> 00:13:38,236
 X over B cubed. Simply shortening
 columns is not enough, because the
 
-181
-00:12:10,768 --> 00:12:12,688
+203
+00:13:38,236 --> 00:13:40,156
 old row range is still present.
 
-182
-00:12:14,634 --> 00:12:19,234
+204
+00:13:42,102 --> 00:13:46,702
 The paper uses two Poisson transformations,
 with a deliberate enlargement
 
-183
-00:12:19,234 --> 00:12:21,754
+205
+00:13:46,702 --> 00:13:49,222
 of an intermediate nonnegative sum.
 
-184
-00:12:21,914 --> 00:12:26,554
+206
+00:13:49,382 --> 00:13:54,022
 The new row scale is script H over
 B cubed and the new column scale
 
-185
-00:12:26,554 --> 00:12:28,274
+207
+00:13:54,022 --> 00:13:55,742
 is X over B cubed.
 
-186
-00:12:28,527 --> 00:12:32,834
+208
+00:13:55,995 --> 00:14:00,302
 Their ratio is unchanged. The
 normalization of the energy compensates
 
-187
-00:12:32,834 --> 00:12:36,674
+209
+00:14:00,302 --> 00:14:04,142
 for the factor lost during transfer,
 so the new target estimate has
 
-188
-00:12:36,714 --> 00:12:38,234
+210
+00:14:04,182 --> 00:14:05,702
 exactly the same form.
 
-189
-00:12:40,258 --> 00:12:43,641
+211
+00:14:07,726 --> 00:14:11,109
 The cutoff is chosen so that the
 remaining branches shrink the row
 
-190
-00:12:43,641 --> 00:12:47,641
+212
+00:14:11,109 --> 00:14:15,109
 scale by a factor bounded
 by D to minus two theta.
 
-191
-00:12:47,641 --> 00:12:51,721
+213
+00:14:15,109 --> 00:14:19,189
 For fixed positive theta, only a
 bounded number of stages is needed
 
-192
-00:12:51,721 --> 00:12:56,241
+214
+00:14:19,189 --> 00:14:23,709
 before direct counting or an empty
 remainder finishes the argument.
 
-193
-00:12:56,241 --> 00:12:59,081
+215
+00:14:23,709 --> 00:14:26,549
 This is the simplified
 recursion from the outline.
 
-194
-00:12:59,081 --> 00:13:03,721
+216
+00:14:26,549 --> 00:14:31,189
 The full proof also carries common
 factors, auxiliary twists, and changing
 
-195
-00:13:03,721 --> 00:13:04,601
+217
+00:14:31,189 --> 00:14:32,069
 smooth weights.
 
-196
-00:13:07,066 --> 00:13:11,346
+218
+00:14:34,534 --> 00:14:38,814
 The September manuscript's stronger
 seven-eighths argument is not obtained
 
-197
-00:13:11,346 --> 00:13:14,266
+219
+00:14:38,814 --> 00:14:41,734
 by changing the sixth
 power in our calculation.
 
-198
-00:13:14,266 --> 00:13:18,506
+220
+00:14:41,734 --> 00:14:45,974
 It compares two representations
 of a completed cubic-theta sum.
 
-199
-00:13:18,506 --> 00:13:21,039
+221
+00:14:45,974 --> 00:14:48,507
 Reflection bounds the sum directly.
 
-200
-00:13:21,039 --> 00:13:24,946
+222
+00:14:48,507 --> 00:14:52,414
 Poisson summation separates a
 principal signal containing one over
 
-201
-00:13:24,946 --> 00:13:28,186
+223
+00:14:52,414 --> 00:14:55,654
 the target L function from
 other character rows.
 
-202
-00:13:28,186 --> 00:13:32,026
+224
+00:14:55,654 --> 00:14:59,494
 The paper must control both the sum
 and the error between the sum and
 
-203
-00:13:32,026 --> 00:13:32,826
+225
+00:14:59,494 --> 00:15:00,294
 that signal.
 
-204
-00:13:34,880 --> 00:13:39,480
+226
+00:15:02,348 --> 00:15:06,948
 Let beta star be the supremum of
 the real parts of zeros across the
 
-205
-00:13:39,560 --> 00:13:43,680
+227
+00:15:07,028 --> 00:15:11,148
 relevant Hecke family, with one
 half included in the definition.
 
-206
-00:13:43,680 --> 00:13:47,093
+228
+00:15:11,148 --> 00:15:14,561
 Suppose it exceeds a proposed
 boundary sigma zero.
 
-207
-00:13:47,093 --> 00:13:50,920
+229
+00:15:14,561 --> 00:15:18,388
 The displayed pair of bounds gives
 the signal a positive power saving
 
-208
-00:13:51,000 --> 00:13:55,280
+230
+00:15:18,468 --> 00:15:22,748
 below beta star. The minimum of
 the two margins must stay positive
 
-209
-00:13:55,280 --> 00:13:57,520
+231
+00:15:22,748 --> 00:15:24,988
 independently of the target character.
 
-210
-00:13:59,466 --> 00:14:03,306
+232
+00:15:26,934 --> 00:15:30,774
 Taking a Mellin transform of this
 better-controlled signal continues
 
-211
-00:14:03,306 --> 00:14:07,066
+233
+00:15:30,774 --> 00:15:34,534
 each reciprocal L function into a
 common half-plane to the left of
 
-212
-00:14:07,066 --> 00:14:12,746
+234
+00:15:34,534 --> 00:15:40,214
 beta star. A holomorphic factor bounded
 away from zero prevents cancellation.
 
-213
-00:14:12,746 --> 00:14:17,026
+235
+00:15:40,214 --> 00:15:44,494
 By the definition of a supremum,
 some zero lies inside that extended
 
-214
-00:14:17,226 --> 00:14:20,255
+236
+00:15:44,694 --> 00:15:47,723
 region, even if no zero attains beta star.
 
-215
-00:14:20,255 --> 00:14:22,506
+237
+00:15:47,723 --> 00:15:49,974
 Its reciprocal would have a pole there.
 
-216
-00:14:22,506 --> 00:14:23,466
+238
+00:15:49,974 --> 00:15:50,934
 Contradiction.
 
-217
-00:14:25,433 --> 00:14:29,913
+239
+00:15:52,901 --> 00:15:57,381
 To reach seven eighths, the paper
 changes the normalized sum:
 
-218
-00:14:29,913 --> 00:14:34,633
+240
+00:15:57,381 --> 00:16:02,101
 it compensates selected prime factors,
 uses unequal averaging scales,
 
-219
-00:14:34,633 --> 00:14:39,553
+241
+00:16:02,101 --> 00:16:07,021
 and combines moment estimates for inverse
 and ordinary character polynomials.
 
-220
-00:14:39,553 --> 00:14:44,033
+242
+00:16:07,021 --> 00:16:11,501
 The affine exponent changes from s
 minus two thirds to s minus eleven
 
-221
-00:14:44,033 --> 00:14:48,393
+243
+00:16:11,501 --> 00:16:15,861
 sixteenths. These estimates close
 the argument at seven eighths.
 
-222
-00:14:48,393 --> 00:14:52,553
+244
+00:16:15,861 --> 00:16:20,021
 This is a map of the extra machinery,
 not a derivation of that exponent
 
-223
-00:14:52,553 --> 00:14:54,713
+245
+00:16:20,021 --> 00:16:22,181
 from our eleven-twelfths calculation.
 
-224
-00:14:57,244 --> 00:15:01,044
+246
+00:16:24,713 --> 00:16:28,513
 Why did solving the larger number-field
 problem answer our original
 
-225
-00:15:01,084 --> 00:15:05,804
+247
+00:16:28,553 --> 00:16:33,273
 question? Lift a Dirichlet character
 by composing it with the ideal
 
-226
-00:15:05,804 --> 00:15:10,404
+248
+00:16:33,273 --> 00:16:37,873
 norm. Its Hecke L function factors
 into the Dirichlet L function for
 
-227
-00:15:10,484 --> 00:15:15,004
+249
+00:16:37,953 --> 00:16:42,473
 chi and the one for chi times the
 quadratic character modulo three,
 
-228
-00:15:15,004 --> 00:15:17,764
+250
+00:16:42,473 --> 00:16:45,233
 apart from harmless finite Euler factors.
 
-229
-00:15:17,964 --> 00:15:22,084
+251
+00:16:45,433 --> 00:16:49,553
 Nonvanishing of the product
 excludes zeros of either factor.
 
-230
-00:15:22,084 --> 00:15:24,204
+252
+00:16:49,553 --> 00:16:51,673
 Poles at one are treated separately.
 
-231
-00:15:26,164 --> 00:15:31,244
+253
+00:16:53,633 --> 00:16:58,713
 In the explicit formula for weighted
 prime counting, a zero rho contributes
 
-232
-00:15:31,244 --> 00:15:35,164
+254
+00:16:58,713 --> 00:17:02,633
 a term proportional to x
 to rho divided by rho.
 
-233
-00:15:35,164 --> 00:15:39,764
+255
+00:17:02,633 --> 00:17:07,233
 Its magnitude contains x to beta,
 where beta is the real part.
 
-234
-00:15:39,764 --> 00:15:43,764
+256
+00:17:07,233 --> 00:17:11,233
 The graph shows illustrative power
 envelopes, not actual prime-counting
 
-235
-00:15:43,764 --> 00:15:48,044
+257
+00:17:11,233 --> 00:17:15,513
 errors. Bounding all the betas away
 from one creates a fixed power
 
-236
-00:15:48,084 --> 00:15:52,564
+258
+00:17:15,553 --> 00:17:20,033
 saving, with further logarithms and
 summation estimates handled analytically.
 
-237
-00:15:54,531 --> 00:15:59,251
+259
+00:17:22,000 --> 00:17:26,720
 The October paper states this uniform
 absolute error for counting primes
 
-238
-00:15:59,251 --> 00:16:03,931
+260
+00:17:26,720 --> 00:17:31,400
 in reduced arithmetic progressions:
 x to eleven twelfths times log
 
-239
-00:16:04,051 --> 00:16:09,251
+261
+00:17:31,520 --> 00:17:36,720
 x. For large moduli, that error can
 exceed the main term, so the statement
 
-240
-00:16:09,251 --> 00:16:13,651
+262
+00:17:36,720 --> 00:17:41,120
 alone is not a useful relative
 asymptotic in every progression.
 
-241
-00:16:13,651 --> 00:16:17,811
+263
+00:17:41,120 --> 00:17:45,280
 Both papers also exclude Landau–Siegel
 zeros sufficiently close to
 
-242
-00:16:17,811 --> 00:16:21,651
+264
+00:17:45,280 --> 00:17:49,120
 one. They do not rule out
 every real zero everywhere.
 
-243
-00:16:24,130 --> 00:16:26,850
+265
+00:17:51,598 --> 00:17:54,318
 The accessible chain is now concrete.
 
-244
-00:16:26,930 --> 00:16:29,610
+266
+00:17:54,398 --> 00:17:57,078
 A mean-square estimate controls a family.
 
-245
-00:16:29,730 --> 00:16:32,090
+267
+00:17:57,198 --> 00:17:59,558
 Sixth-power rows repeat the target.
 
-246
-00:16:32,330 --> 00:16:34,690
+268
+00:17:59,798 --> 00:18:02,158
 Their count produces eleven twelfths.
 
-247
-00:16:34,770 --> 00:16:38,650
+269
+00:18:02,238 --> 00:18:06,118
 A Mellin transform converts
 cancellation into holomorphy.
 
-248
-00:16:38,650 --> 00:16:42,250
+270
+00:18:06,118 --> 00:18:09,718
 A supposed zero then
 forces an impossible pole.
 
-249
-00:16:42,250 --> 00:16:46,330
+271
+00:18:09,718 --> 00:18:13,798
 Poisson summation, cubic theta
 transformations, and a scale-reducing
 
-250
-00:16:46,330 --> 00:16:50,210
+272
+00:18:13,798 --> 00:18:17,678
 recursion are what the paper uses
 to earn that initial estimate.
 
-251
-00:16:52,220 --> 00:16:56,403
+273
+00:18:19,689 --> 00:18:23,872
 The seven-eighths paper uses a more
 elaborate comparison and continuation
 
-252
-00:16:56,403 --> 00:16:59,763
+274
+00:18:23,872 --> 00:18:27,232
 argument to move the fixed
 boundary farther left.
 
-253
-00:16:59,763 --> 00:17:03,683
+275
+00:18:27,232 --> 00:18:31,152
 If valid, either fixed boundary
 is a historic advance.
 
-254
-00:17:03,683 --> 00:17:06,523
+276
+00:18:31,152 --> 00:18:33,992
 Neither statement forces the critical line.
 
-255
-00:17:06,540 --> 00:17:10,723
+277
+00:18:34,009 --> 00:18:38,192
 The central lesson is that the power
 of the result comes from one guarantee
 
-256
-00:17:10,723 --> 00:17:14,043
+278
+00:18:38,192 --> 00:18:41,512
 valid at every height
 and for every character.
 
-257
-00:17:14,043 --> 00:17:17,683
+279
+00:18:41,512 --> 00:18:45,152
 The accompanying transcript gives
 the equations, chapter times, and
 
-258
-00:17:17,683 --> 00:17:19,923
+280
+00:18:45,152 --> 00:18:47,392
 exact places to continue reading.

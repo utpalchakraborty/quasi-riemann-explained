@@ -1,5 +1,15 @@
 
-00:00:00 | A frontier for every height
+00:00:00 | The proof at a glance
+Source: October §§2.1–2.5 and §3; September proof overview and Proposition 2.1
+
+The central idea: cancellation rules out zeros
+Before we dive in, here is the proof's central idea. The goal is to exclude every zero to the right of one fixed boundary. The strategy is to study the reciprocal of an L function. Its arithmetic expansion contains Möbius signs. If those signs cancel strongly enough, an integral transform lets us continue the reciprocal into a larger region, where it is holomorphic: it has no poles. But a zero of the original L function would force a pole of its reciprocal. That contradiction is the bridge from arithmetic cancellation to a zero-free region.
+
+The route to eleven twelfths
+How does the October manuscript get that cancellation? First, place the target sum inside a larger family. Next, bound the family's total squared size: a shared energy budget. Special sixth-power rows almost repeat the target, so a large target would spend that budget many times. Count those repetitions, divide the budget, and take a square root: this gives the eleven-twelfths exponent, with arbitrarily small losses. A Mellin transform then turns that bound into the zero-free region. The difficult family estimate comes from Poisson summation, cubic theta transformations, a quadratic large sieve, and a shrinking recursion. We will unpack each step, then explain the distinct refinement that reaches seven eighths.
+
+
+00:01:27 | A frontier for every height
 Source: Both abstracts; September introduction
 
 A zero-free frontier
@@ -12,7 +22,7 @@ One boundary, independent of height
 Classical zero-free regions narrow toward the line sigma equals one as the height increases. These papers claim fixed boundaries: eleven twelfths and, more strongly, seven eighths. The second excludes a wider half-plane. Reflection symmetry would then confine the nontrivial zeta zeros between one eighth and seven eighths. The critical line remains a much stronger target.
 
 
-00:01:18 | Why the zeros know about primes
+00:02:45 | Why the zeros know about primes
 Source: October §1; classical Euler product
 
 Multiplication becomes analysis
@@ -25,7 +35,7 @@ A family-wide claim
 The manuscripts claim their boundary for every Dirichlet character, not just the trivial character that gives zeta. The same numerical boundary works independently of the conductor and the height. That does not mean every constant in the proof is uniform: constants may depend on the fixed target character. It is the exponent, and ultimately the boundary, that must remain common.
 
 
-00:02:36 | Turn zeros into a cancellation problem
+00:04:04 | Turn zeros into a cancellation problem
 Source: October §§2.1, 3
 
 The arithmetic inverse
@@ -38,7 +48,7 @@ A zero would force a pole
 Partial summation writes the reciprocal of zeta as s times an integral of M of x against x to the power minus s minus one. If M grows no faster than x to alpha, the integral converges locally uniformly when sigma exceeds alpha. It therefore defines a holomorphic function there. But a zero of zeta would force its reciprocal to have a pole. Those two facts cannot coexist.
 
 
-00:03:53 | Why move to the Eisenstein lattice?
+00:05:20 | Why move to the Eisenstein lattice?
 Source: October §§1.4, 2.1–2.2
 
 An arithmetic setting with sixfold symmetry
@@ -51,7 +61,7 @@ Introduce a tunable phase
 Now insert a sextic residue character depending on a new variable u. Its nonzero values are sixth roots of one, shown around this circle. Changing u produces a family of sums A u. The original target is the row u equals one. The strategy is to control the combined squared size of the entire family, then recover that particular row.
 
 
-00:05:12 | An average bound is not a pointwise bound
+00:06:40 | An average bound is not a pointwise bound
 Source: October Proposition 3.1; §2.2
 
 The manuscript's central estimate
@@ -64,7 +74,7 @@ Force the target to appear many times
 The next move is to find many rows that almost reproduce A one. If A one were huge, all those rows would consume energy. The total mean-square estimate then limits its size. The sixth-power rows provide exactly this repetition. That is the bridge from an average theorem to a bound on one prescribed L function.
 
 
-00:06:26 | Where eleven twelfths comes from
+00:07:53 | Where eleven twelfths comes from
 Source: October §2.2 and equation prime-extract in §3
 
 Sixth powers erase the phase
@@ -80,7 +90,7 @@ Theta is small, but strictly positive
 For any requested positive epsilon, choose theta sufficiently small, and then choose the loss in the mean-square estimate sufficiently small. This yields D to eleven twelfths plus epsilon. We have not set theta equal to zero; later recursion needs it positive. The constant may worsen as epsilon shrinks. The zero-free boundary is the open half-plane strictly beyond eleven twelfths.
 
 
-00:08:13 | How cancellation excludes an actual zero
+00:09:41 | How cancellation excludes an actual zero
 Source: October §3, proof following Proposition 3.1
 
 Mellin transform: resolve powers
@@ -96,7 +106,7 @@ The contradiction is algebraic
 Multiplying the continued identity by L gives L times the holomorphic transform equals W hat. At the supposed zero, the left side is zero while the right side is strictly positive. This is the contradiction! Notice what carried the reasoning: a bound on all scales and analytic continuation, not checking zeros numerically and not moving a contour across an unaccounted pole.
 
 
-00:10:02 | What supplies the hard estimate?
+00:11:30 | What supplies the hard estimate?
 Source: October §§2.3–2.5; schematic proof map
 
 Poisson summation changes the viewpoint
@@ -112,7 +122,7 @@ Completion creates a debt
 The completed sum includes cube factors that were not in the target. Möbius inversion removes them. Small cube divisors can be bounded directly. Large cube divisors leave a remainder, and that remainder still has to be controlled. This is where the recursion enters. The transformation and these remainder estimates are deep inputs claimed by the manuscript; our animations do not independently prove them.
 
 
-00:11:51 | A recursion that actually becomes smaller
+00:13:18 | A recursion that actually becomes smaller
 Source: October §2.5; full auxiliary-family treatment in §§4–7
 
 Track two scales, not just one
@@ -125,7 +135,7 @@ A positive theta pays for termination
 The cutoff is chosen so that the remaining branches shrink the row scale by a factor bounded by D to minus two theta. For fixed positive theta, only a bounded number of stages is needed before direct counting or an empty remainder finishes the argument. This is the simplified recursion from the outline. The full proof also carries common factors, auxiliary twists, and changing smooth weights.
 
 
-00:13:06 | What changes in the seven-eighths paper?
+00:14:33 | What changes in the seven-eighths paper?
 Source: September proof overview; Proposition 2.1; Parts I–II
 
 A different, more elaborate route
@@ -141,7 +151,7 @@ The refinement must pay for a wider region
 To reach seven eighths, the paper changes the normalized sum: it compensates selected prime factors, uses unequal averaging scales, and combines moment estimates for inverse and ordinary character polynomials. The affine exponent changes from s minus two thirds to s minus eleven sixteenths. These estimates close the argument at seven eighths. This is a map of the extra machinery, not a derivation of that exponent from our eleven-twelfths calculation.
 
 
-00:14:56 | Bring the conclusion back to primes
+00:16:23 | Bring the conclusion back to primes
 Source: Both introductions; October §3 transfer and Corollary 1.2
 
 Return from Hecke to Dirichlet
@@ -154,7 +164,7 @@ The gain has a precise scope
 The October paper states this uniform absolute error for counting primes in reduced arithmetic progressions: x to eleven twelfths times log x. For large moduli, that error can exceed the main term, so the statement alone is not a useful relative asymptotic in every progression. Both papers also exclude Landau–Siegel zeros sufficiently close to one. They do not rule out every real zero everywhere.
 
 
-00:16:23 | What you can now read in the paper
+00:17:50 | What you can now read in the paper
 Source: OpenAI manuscripts, 30 September and 5 October 2026
 
 Follow the chain of implications
