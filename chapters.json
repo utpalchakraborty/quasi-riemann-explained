@@ -1,0 +1,74 @@
+[
+  {
+    "id": "01_frontier",
+    "title": "A frontier for every height",
+    "start": 0.0,
+    "duration": 78.532031
+  },
+  {
+    "id": "02_primes",
+    "title": "Why the zeros know about primes",
+    "start": 78.532031,
+    "duration": 78.065365
+  },
+  {
+    "id": "03_mobius",
+    "title": "Turn zeros into a cancellation problem",
+    "start": 156.597396,
+    "duration": 76.798698
+  },
+  {
+    "id": "04_lattice",
+    "title": "Why move to the Eisenstein lattice?",
+    "start": 233.396094,
+    "duration": 79.498698
+  },
+  {
+    "id": "05_energy",
+    "title": "An average bound is not a pointwise bound",
+    "start": 312.894792,
+    "duration": 73.498698
+  },
+  {
+    "id": "06_exponent",
+    "title": "Where eleven twelfths comes from",
+    "start": 386.39349,
+    "duration": 107.598047
+  },
+  {
+    "id": "07_mellin",
+    "title": "How cancellation excludes an actual zero",
+    "start": 493.991537,
+    "duration": 108.664714
+  },
+  {
+    "id": "08_engine",
+    "title": "What supplies the hard estimate?",
+    "start": 602.656251,
+    "duration": 108.764714
+  },
+  {
+    "id": "09_recursion",
+    "title": "A recursion that actually becomes smaller",
+    "start": 711.420965,
+    "duration": 74.698698
+  },
+  {
+    "id": "10_refinement",
+    "title": "What changes in the seven-eighths paper?",
+    "start": 786.1196630000001,
+    "duration": 110.098047
+  },
+  {
+    "id": "11_consequences",
+    "title": "Bring the conclusion back to primes",
+    "start": 896.21771,
+    "duration": 86.965365
+  },
+  {
+    "id": "12_takeaway",
+    "title": "What you can now read in the paper",
+    "start": 983.183075,
+    "duration": 58.266016
+  }
+]
