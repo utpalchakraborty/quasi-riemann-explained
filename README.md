@@ -2,6 +2,8 @@
 
 [Watch the film and read along](https://utpalchakraborty.github.io/quasi-riemann-explained/)
 
+**Second edition:** [The Fixed Frontier](https://utpalchakraborty.github.io/quasi-riemann-explained/v2/), a new film with a new script, design and animation. Its source is in `studio/` and its files in `v2/`. The first edition below is unchanged.
+
 An 18 minute 49 second animated explainer, narrated by ElevenLabs Sarah, with a dark theme, 13 chapters, English captions, a transcript, and equations. The film is 1920 × 1080 at 30 fps.
 
 The latest edition opens with an 87-second, two-slide proof roadmap: the central cancellation-to-zero-free-region argument, followed by the strategy behind the 11/12 exponent. All 12 original chapters and their narration are preserved.

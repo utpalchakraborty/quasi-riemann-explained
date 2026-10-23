@@ -49,7 +49,7 @@ Partial summation writes the reciprocal of zeta as s times an integral of M of x
 
 
 00:05:20 | Why move to the Eisenstein lattice?
-Source: October §§1.4, 2.1–2.2
+Source: October §1 and §§2.1–2.2
 
 An arithmetic setting with sixfold symmetry
 The argument works in the number field Q of square root minus three. Its integers are a plus b omega, where omega is a cube root of one. In the complex plane they form this triangular lattice. The norm is a squared minus a b plus b squared. The geometry makes cubic and sextic residue characters natural tools for the problem.
@@ -75,7 +75,7 @@ The next move is to find many rows that almost reproduce A one. If A one were hu
 
 
 00:07:53 | Where eleven twelfths comes from
-Source: October §2.2 and equation prime-extract in §3
+Source: October §2.2 and equation (3.2) in §3
 
 Sixth powers erase the phase
 Take u equal to p to the sixth power, where p is a prime element in the Eisenstein integers. Away from p, a sixth-order character raised to the sixth power is one. When p divides the summation index, it is zero. So A of p to the sixth differs from A one only through those omitted multiples. For prime norm about Y, their total contribution is bounded by order D over Y.

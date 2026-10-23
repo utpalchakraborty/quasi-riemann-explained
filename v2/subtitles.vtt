@@ -1,0 +1,1041 @@
+WEBVTT
+
+00:00:00.780 --> 00:00:06.680
+In 1859, Bernhard Riemann wrote an
+eight-page paper that tied the prime numbers
+
+00:00:06.700 --> 00:00:10.680
+to the zeros of a single
+function, the zeta function.
+
+00:00:10.700 --> 00:00:14.880
+The zeros that matter lie in a
+narrow strip of the complex plane,
+
+00:00:14.900 --> 00:00:19.800
+between zero and one. Riemann guessed
+that all of them sit on one line,
+
+00:00:19.820 --> 00:00:23.930
+the line one half. That
+guess is still open.
+
+00:00:24.067 --> 00:00:28.847
+Computers have since located more
+than ten trillion of these zeros.
+
+00:00:28.867 --> 00:00:32.657
+Every one of them lies
+exactly on that line.
+
+00:00:34.060 --> 00:00:37.640
+But checking zeros proves
+nothing about all of them.
+
+00:00:37.660 --> 00:00:42.280
+What mathematicians can prove is more
+modest: a region near the right edge of the
+
+00:00:42.300 --> 00:00:44.840
+strip where no zero can be.
+
+00:00:44.860 --> 00:00:50.920
+In 1896 that region was only the edge
+itself, the line sigma equals one,
+
+00:00:50.940 --> 00:00:54.090
+and that was enough to prove
+the prime number theorem.
+
+00:00:54.200 --> 00:00:58.900
+Three years later, de la Vallée
+Poussin widened it into a sliver.
+
+00:00:58.920 --> 00:01:01.460
+The trouble is the shape of the sliver.
+
+00:01:01.480 --> 00:01:06.420
+As you climb to greater heights, it gets
+thinner, and it thins toward nothing.
+
+00:01:06.440 --> 00:01:11.060
+The best version we have, from
+Vinogradov and Korobov in 1958,
+
+00:01:11.080 --> 00:01:12.470
+still does.
+
+00:01:13.927 --> 00:01:18.867
+For a hundred and sixty-seven years, no
+one could prove that any fixed vertical
+
+00:01:18.887 --> 00:01:22.827
+line, short of one, keeps every zero away.
+
+00:01:22.847 --> 00:01:26.517
+That statement is called a
+quasi-Riemann hypothesis.
+
+00:01:26.770 --> 00:01:32.693
+In the autumn of 2026, OpenAI released
+two manuscripts that claim to prove it.
+
+00:01:32.713 --> 00:01:37.653
+The first, dated September thirtieth,
+claims that no zero lies to the right of
+
+00:01:37.673 --> 00:01:43.093
+seven eighths. The second, five days
+later, isolates a simpler proof of a weaker
+
+00:01:43.113 --> 00:01:48.693
+line, eleven twelfths. Both lines hold
+at every height, and for every Dirichlet
+
+00:01:48.713 --> 00:01:51.303
+L-function, not only zeta.
+
+00:01:51.433 --> 00:01:54.293
+This film explains how the arguments work.
+
+00:01:54.313 --> 00:01:56.983
+It does not certify that they are correct.
+
+00:01:57.113 --> 00:02:01.303
+That is the work of careful
+readers, and it takes time.
+
+00:02:07.827 --> 00:02:10.607
+Here is the whole argument on one map.
+
+00:02:10.627 --> 00:02:14.367
+We will follow the eleven twelfths
+proof, because it is the cleanest,
+
+00:02:14.387 --> 00:02:17.407
+and then see what the
+seven eighths proof adds.
+
+00:02:17.427 --> 00:02:20.737
+There are four moves,
+and an engine underneath.
+
+00:02:22.000 --> 00:02:27.310
+Move one turns a question about zeros
+into a question about cancellation.
+
+00:02:27.520 --> 00:02:29.790
+Take one over the L-function.
+
+00:02:29.840 --> 00:02:34.340
+Its series is built from Möbius
+signs: plus one, minus one,
+
+00:02:34.360 --> 00:02:40.780
+or zero. If those signs cancel strongly
+enough, one over L stays finite and smooth
+
+00:02:40.800 --> 00:02:46.030
+in a wider region. But a zero of
+L would make one over L blow up.
+
+00:02:46.160 --> 00:02:49.550
+So enough cancellation means no zeros.
+
+00:02:50.833 --> 00:02:54.543
+Move two hides the target
+sum inside a family.
+
+00:02:54.753 --> 00:03:00.253
+The proof moves to a number system with
+six-fold symmetry and gives the sum a twist,
+
+00:03:00.273 --> 00:03:03.423
+a phase that depends
+on a new parameter, u.
+
+00:03:03.633 --> 00:03:06.863
+Our sum is the member with u equal to one.
+
+00:03:06.993 --> 00:03:12.133
+The family as a whole obeys an energy budget:
+add up the squares of all its members,
+
+00:03:12.153 --> 00:03:15.583
+and the total is about what
+random signs would give.
+
+00:03:16.867 --> 00:03:19.137
+Move three makes copies.
+
+00:03:19.267 --> 00:03:24.207
+When u is the sixth power of a
+prime, the twist almost disappears,
+
+00:03:24.227 --> 00:03:27.777
+and that member of the family
+nearly equals the target.
+
+00:03:27.907 --> 00:03:33.217
+There are many such primes, so the target
+appears many times inside the budget.
+
+00:03:34.660 --> 00:03:36.800
+Move four is arithmetic.
+
+00:03:36.820 --> 00:03:41.560
+If the target were large, every copy would
+be large, and together they would overspend
+
+00:03:41.580 --> 00:03:45.360
+the budget. Count the copies,
+divide the budget among them,
+
+00:03:45.380 --> 00:03:49.920
+and take a square root. The target can
+be no bigger than about D to the eleven
+
+00:03:49.940 --> 00:03:54.960
+twelfths. Feed that into move one, and
+no zero survives to the right of eleven
+
+00:03:54.980 --> 00:03:56.130
+twelfths.
+
+00:03:57.400 --> 00:04:01.910
+Everything rests on the energy
+budget, and that is the hard part.
+
+00:04:02.040 --> 00:04:07.620
+It comes from an engine: Poisson summation,
+which trades positions for frequencies;
+
+00:04:07.640 --> 00:04:12.740
+cubic Gauss sums; a theta function
+from the theory of automorphic forms;
+
+00:04:12.760 --> 00:04:17.620
+a large sieve for quadratic characters;
+and a recursion that shrinks the problem
+
+00:04:17.640 --> 00:04:20.070
+until it is small enough to count.
+
+00:04:20.200 --> 00:04:24.180
+The September manuscript reaches
+seven eighths by a second route,
+
+00:04:24.200 --> 00:04:26.660
+which begins where this one ends.
+
+00:04:26.680 --> 00:04:29.830
+Now, the pieces, one at a time.
+
+00:04:34.060 --> 00:04:38.280
+First, why should zeros
+know anything about primes?
+
+00:04:38.300 --> 00:04:43.440
+For sigma greater than one, zeta of
+s is a sum over all whole numbers,
+
+00:04:43.460 --> 00:04:46.280
+and also a product over all primes.
+
+00:04:46.300 --> 00:04:50.600
+Expand the product and every
+whole number appears exactly once,
+
+00:04:50.620 --> 00:04:54.890
+because every whole number factors
+into primes in exactly one way.
+
+00:04:55.000 --> 00:04:58.790
+That identity, Euler’s
+product, is the bridge.
+
+00:04:58.920 --> 00:05:02.620
+The zeros of zeta control how
+the primes are spread out,
+
+00:05:02.640 --> 00:05:07.860
+and how far the zeros keep from the line
+sigma equals one controls how accurately
+
+00:05:07.880 --> 00:05:09.350
+we can count them.
+
+00:05:10.633 --> 00:05:15.493
+Dirichlet’s L-functions do the same
+for primes in arithmetic progressions.
+
+00:05:15.513 --> 00:05:20.773
+A character, like this one modulo
+four, weights each number by plus one,
+
+00:05:20.793 --> 00:05:24.213
+minus one, or zero
+according to its remainder.
+
+00:05:24.233 --> 00:05:28.693
+The manuscripts claim their line for
+every one of these functions at once,
+
+00:05:28.713 --> 00:05:31.543
+the same line whatever the modulus.
+
+00:05:35.600 --> 00:05:40.750
+The Möbius function, mu, supplies
+the signs in one over zeta.
+
+00:05:40.880 --> 00:05:45.100
+It is zero when the number is
+divisible by a square bigger than one.
+
+00:05:45.120 --> 00:05:49.470
+Otherwise it is minus one, raised
+to the number of prime factors.
+
+00:05:49.760 --> 00:05:55.150
+Six gets plus one, thirty gets
+minus one, and twelve gets zero.
+
+00:05:56.433 --> 00:06:00.623
+Add the signs up and you get
+the Mertens function, M of x.
+
+00:06:00.673 --> 00:06:03.693
+Here it is, computed up to twelve hundred.
+
+00:06:03.713 --> 00:06:09.263
+Across twelve hundred terms, the total
+never strays more than fifteen from zero.
+
+00:06:09.400 --> 00:06:15.140
+A bound like x to the alpha, with alpha
+less than one, is what cancellation means
+
+00:06:15.160 --> 00:06:18.630
+in numbers. No picture can prove one.
+
+00:06:20.060 --> 00:06:25.560
+Here is the bridge. Partial summation
+writes one over zeta as an integral of M
+
+00:06:25.580 --> 00:06:28.080
+of x against a power of x.
+
+00:06:28.100 --> 00:06:33.400
+If M of x grows no faster than x to the
+alpha, the integral converges whenever
+
+00:06:33.420 --> 00:06:38.000
+sigma exceeds alpha, so one
+over zeta is holomorphic there.
+
+00:06:38.020 --> 00:06:40.010
+It has no poles at all.
+
+00:06:40.213 --> 00:06:44.433
+A zero of zeta at rho would
+be a pole of one over zeta.
+
+00:06:44.453 --> 00:06:47.713
+It cannot be both. That is the whole idea.
+
+00:06:47.733 --> 00:06:51.043
+The rest of the proof is about
+earning the cancellation.
+
+00:06:55.100 --> 00:06:57.930
+The proof does not attack zeta directly.
+
+00:06:57.980 --> 00:07:02.200
+It moves to a richer number
+system, the Eisenstein integers:
+
+00:07:02.220 --> 00:07:08.120
+numbers a plus b omega, where omega
+is a complex cube root of one.
+
+00:07:08.140 --> 00:07:11.640
+They form a triangular lattice,
+and they have six units,
+
+00:07:11.660 --> 00:07:14.330
+the six sixth roots of one.
+
+00:07:14.467 --> 00:07:19.567
+Every Dirichlet L-function reappears
+here as a factor of an L-function of this
+
+00:07:19.587 --> 00:07:25.377
+field. So a line proved here comes back
+down to zeta and all its relatives.
+
+00:07:26.633 --> 00:07:32.693
+In this world, the target is a smooth
+sum, A one of D: Möbius values,
+
+00:07:32.713 --> 00:07:37.463
+weighted by a fixed character
+nu, over ideals of norm about D.
+
+00:07:37.593 --> 00:07:43.303
+It has about D terms. The goal is to
+show that it is much smaller than D.
+
+00:07:44.727 --> 00:07:50.067
+Now the twist. Six-fold symmetry
+brings sextic residue symbols:
+
+00:07:50.087 --> 00:07:55.827
+for each n, a phase, chi n of u,
+that is always a sixth root of one,
+
+00:07:55.847 --> 00:07:59.907
+or zero. Insert it, and the
+single sum becomes a family,
+
+00:07:59.927 --> 00:08:02.867
+A u, one member for each u.
+
+00:08:02.887 --> 00:08:06.347
+Set u equal to one and every phase is one.
+
+00:08:06.367 --> 00:08:08.437
+That member is our target.
+
+00:08:12.500 --> 00:08:16.690
+The central estimate of the October
+paper is about the whole family.
+
+00:08:16.820 --> 00:08:22.080
+Add up the squared sizes of A u,
+for every u with norm up to H.
+
+00:08:22.100 --> 00:08:27.840
+The total is at most about D times
+H, where H is a little bigger than D:
+
+00:08:27.860 --> 00:08:32.050
+D to the one plus theta, with
+theta small and positive.
+
+00:08:32.167 --> 00:08:37.267
+There are about H members, so a typical
+member has size about the square root of
+
+00:08:37.287 --> 00:08:41.957
+D. That is square-root
+cancellation, on average.
+
+00:08:43.313 --> 00:08:47.133
+But an average says nothing
+about any single member.
+
+00:08:47.153 --> 00:08:52.253
+One huge sum can hide among many
+small ones, and the budget allows it.
+
+00:08:52.273 --> 00:08:56.813
+The member we care about, u
+equal to one, is a single row.
+
+00:08:56.833 --> 00:09:00.863
+To pin it down, we need the
+target to show up many times.
+
+00:09:04.933 --> 00:09:11.283
+Here is how. Take a prime p of the
+lattice, and set u equal to p to the sixth.
+
+00:09:11.333 --> 00:09:15.313
+A sixth-order phase raised
+to the sixth power is one.
+
+00:09:15.333 --> 00:09:19.873
+So the phase is one for every
+n, except the n that p divides,
+
+00:09:19.893 --> 00:09:21.443
+where it is zero.
+
+00:09:21.567 --> 00:09:26.557
+The sixth-power row is the target,
+minus the terms divisible by p.
+
+00:09:26.687 --> 00:09:32.317
+If p has norm about Y, there are
+only about D over Y of those.
+
+00:09:33.600 --> 00:09:35.310
+How many copies are there?
+
+00:09:35.520 --> 00:09:40.860
+One for each prime with norm up
+to Y: about Y over log Y of them,
+
+00:09:40.880 --> 00:09:42.780
+by the prime ideal theorem.
+
+00:09:42.800 --> 00:09:47.820
+Their sixth powers have norm up to Y to
+the sixth, and to stay inside the family
+
+00:09:47.840 --> 00:09:52.910
+that must be at most H. So
+Y is H to the one sixth.
+
+00:09:54.167 --> 00:10:00.707
+Now spend the budget. Each copy is the
+target, up to an error of about D over Y.
+
+00:10:00.727 --> 00:10:06.067
+So the copies together cost about Y
+over log Y times the target squared,
+
+00:10:06.087 --> 00:10:09.077
+and that cannot exceed D times H.
+
+00:10:09.207 --> 00:10:13.907
+Divide, and the target squared
+is at most D times H over Y,
+
+00:10:13.927 --> 00:10:15.717
+plus the error squared.
+
+00:10:17.080 --> 00:10:22.980
+Put in Y equals H to the one sixth,
+and H equals D to the one plus theta.
+
+00:10:23.000 --> 00:10:29.220
+D times H to the five sixths is D to the
+eleven sixths, plus five theta over six.
+
+00:10:29.240 --> 00:10:33.860
+Take the square root... eleven
+twelfths, plus five theta over twelve.
+
+00:10:33.880 --> 00:10:38.470
+The error term gives only about D to
+the five sixths, which is smaller.
+
+00:10:38.600 --> 00:10:42.700
+Theta can be as small as we like,
+but it has to stay positive,
+
+00:10:42.720 --> 00:10:44.500
+because the engine needs it.
+
+00:10:44.520 --> 00:10:49.180
+So the target is at most D to
+the eleven twelfths plus epsilon,
+
+00:10:49.200 --> 00:10:52.700
+for every epsilon. That
+is the cancellation.
+
+00:10:52.720 --> 00:10:55.750
+Now we turn it into a
+statement about zeros.
+
+00:10:59.800 --> 00:11:04.340
+The sums are smooth, so the right
+tool is the Mellin transform:
+
+00:11:04.360 --> 00:11:08.660
+integrate A one of D
+against D to the minus s.
+
+00:11:08.680 --> 00:11:13.380
+The bound we just proved makes this
+integral converge for every s with real part
+
+00:11:13.400 --> 00:11:17.910
+above eleven twelfths, so the
+transform is holomorphic there.
+
+00:11:18.033 --> 00:11:22.493
+Where the real part exceeds one,
+you can compute it term by term.
+
+00:11:22.513 --> 00:11:26.893
+The answer is the Mellin transform
+of the window, W hat of s,
+
+00:11:26.913 --> 00:11:28.863
+divided by the L-function.
+
+00:11:28.993 --> 00:11:34.893
+Multiply through: L times the transform
+equals W hat, and that identity carries
+
+00:11:34.913 --> 00:11:38.623
+over to the whole half-plane
+beyond eleven twelfths.
+
+00:11:40.060 --> 00:11:45.400
+Now suppose L had a zero,
+rho, beyond eleven twelfths.
+
+00:11:45.420 --> 00:11:50.640
+The proof aims the window at it:
+W of y is y to the minus rho,
+
+00:11:50.660 --> 00:11:54.600
+times a smooth bump, phi,
+that is never negative.
+
+00:11:54.620 --> 00:12:01.050
+Then W hat at rho is the integral of
+phi of y over y, a positive number.
+
+00:12:01.373 --> 00:12:06.427
+At rho, the left side is zero times
+something finite, which is zero.
+
+00:12:06.447 --> 00:12:08.507
+The right side is positive.
+
+00:12:08.527 --> 00:12:10.827
+Zero equals a positive number!
+
+00:12:10.847 --> 00:12:13.277
+So no such zero exists.
+
+00:12:17.367 --> 00:12:20.387
+Everything so far assumed
+the energy budget.
+
+00:12:20.407 --> 00:12:22.597
+Now for the engine that proves it.
+
+00:12:22.727 --> 00:12:27.397
+Expand the squares and apply Poisson
+summation in the row variable u.
+
+00:12:27.447 --> 00:12:32.437
+Poisson summation trades a sum over
+positions for a sum over frequencies.
+
+00:12:32.567 --> 00:12:36.867
+A long sum over u becomes a
+short sum over a new variable,
+
+00:12:36.887 --> 00:12:42.517
+h, with about D squared over H
+terms: D to the one minus theta.
+
+00:12:43.800 --> 00:12:47.860
+The Fourier transforms of the
+sextic phases are Gauss sums,
+
+00:12:47.880 --> 00:12:50.070
+and here the arithmetic helps.
+
+00:12:50.200 --> 00:12:54.710
+For ordinary integers, the square
+of a Gauss sum is just a sign.
+
+00:12:54.840 --> 00:12:59.740
+The paper uses a sextic relative of that
+identity, which goes back to Hasse and
+
+00:12:59.760 --> 00:13:01.110
+Heath-Brown.
+
+00:13:01.233 --> 00:13:06.493
+It lets the Möbius values absorb a Gauss
+sum, and what is left are cubic Gauss
+
+00:13:06.513 --> 00:13:11.853
+sums. The problem becomes the
+energy of new sums, B h of X,
+
+00:13:11.873 --> 00:13:16.383
+built from cubic Gauss sums
+and twisted by phases in h.
+
+00:13:20.467 --> 00:13:23.217
+Cubic Gauss sums are not random.
+
+00:13:23.267 --> 00:13:27.967
+Kubota and Patterson showed that they are
+the Fourier coefficients of a cubic theta
+
+00:13:27.987 --> 00:13:32.817
+function, an automorphic form on
+three-dimensional hyperbolic space.
+
+00:13:33.027 --> 00:13:38.017
+Automorphic forms have symmetry, and
+symmetry gives a transformation law.
+
+00:13:38.133 --> 00:13:41.123
+To use it, the paper completes the sum.
+
+00:13:41.173 --> 00:13:46.593
+Alongside each square-free index
+n, it includes n times b cubed,
+
+00:13:46.613 --> 00:13:51.393
+for every b, which are exactly the
+terms the theta function contains.
+
+00:13:51.413 --> 00:13:57.203
+The transformation then turns a long
+sum over n into a short dual sum.
+
+00:13:58.600 --> 00:14:00.737
+And the phases change character.
+
+00:14:00.787 --> 00:14:06.167
+At each prime dividing h, the Fourier
+side contributes chi to the minus one,
+
+00:14:06.187 --> 00:14:09.457
+and the theta side contributes
+chi to the minus two.
+
+00:14:09.587 --> 00:14:14.087
+Together that is chi to the minus
+three, which equals chi cubed.
+
+00:14:14.107 --> 00:14:17.927
+And the cube of a sixth-order
+phase is just plus or minus one.
+
+00:14:17.947 --> 00:14:19.457
+It is quadratic.
+
+00:14:20.733 --> 00:14:25.753
+That matters, because quadratic
+characters have the sharpest large sieve.
+
+00:14:25.773 --> 00:14:31.353
+For a family with M rows and L columns,
+it bounds the energy by M plus L,
+
+00:14:31.373 --> 00:14:36.633
+up to tiny losses. The general bound for
+higher-order characters carries an extra
+
+00:14:36.653 --> 00:14:41.113
+term, M times L to the two thirds,
+which would break the count.
+
+00:14:41.133 --> 00:14:45.403
+With the quadratic sieve, the
+completed sums come in on budget.
+
+00:14:49.467 --> 00:14:51.897
+But completion borrowed something.
+
+00:14:51.947 --> 00:14:54.937
+The cube terms were never
+in the original sum.
+
+00:14:55.067 --> 00:14:59.977
+Möbius inversion takes them back out,
+and for small b that is harmless.
+
+00:15:00.027 --> 00:15:04.607
+For large b, it leaves remainders:
+energies of the same kind,
+
+00:15:04.627 --> 00:15:10.247
+at a smaller column scale, X over the
+norm of b cubed, but still over the full
+
+00:15:10.267 --> 00:15:13.977
+range of rows. That is not progress yet.
+
+00:15:15.233 --> 00:15:20.333
+So the paper applies Poisson summation
+twice more, after deliberately widening
+
+00:15:20.353 --> 00:15:25.263
+an intermediate sum, which is allowed
+because every term in it is non-negative.
+
+00:15:25.393 --> 00:15:30.173
+The result is the same kind of estimate,
+with both scales divided by the norm of
+
+00:15:30.193 --> 00:15:35.983
+b cubed. Rows and columns shrink
+together, and their ratio never changes.
+
+00:15:36.180 --> 00:15:38.160
+And the shrinking is real.
+
+00:15:38.180 --> 00:15:43.170
+Each step shrinks the row range by a
+factor of at least D to the two theta.
+
+00:15:43.300 --> 00:15:47.920
+Because theta is positive, a bounded
+number of steps brings every branch down to
+
+00:15:47.940 --> 00:15:50.640
+a size where simple counting is enough.
+
+00:15:50.660 --> 00:15:54.450
+That is why theta could
+be small, but never zero.
+
+00:15:54.567 --> 00:15:59.427
+The full proof carries extra twists, common
+factors, and changing weights through
+
+00:15:59.447 --> 00:16:03.877
+every step. But this is its
+skeleton, and it closes.
+
+00:16:03.927 --> 00:16:08.117
+The energy budget is proved,
+and eleven twelfths follows.
+
+00:16:12.200 --> 00:16:16.740
+The September manuscript goes further,
+with a different engine built around one
+
+00:16:16.760 --> 00:16:21.860
+principle. Let beta star be the
+largest real part of any zero,
+
+00:16:21.880 --> 00:16:26.100
+across all the Hecke L-functions
+of this field, or the supremum,
+
+00:16:26.120 --> 00:16:31.300
+if no zero attains it. Suppose beta
+star is bigger than a proposed line,
+
+00:16:31.320 --> 00:16:32.630
+sigma zero.
+
+00:16:32.767 --> 00:16:37.707
+For each target, the paper builds a
+sum that it can bound in two ways.
+
+00:16:37.727 --> 00:16:42.227
+Reflection, from the cubic theta
+transformation, bounds it directly.
+
+00:16:42.247 --> 00:16:47.907
+Poisson summation compares it with a signal
+that contains one over the target L-function.
+
+00:16:47.927 --> 00:16:52.107
+If both bounds hold, with margins
+that do not depend on the target,
+
+00:16:52.127 --> 00:16:56.717
+the reciprocal continues a fixed
+distance to the left of beta star.
+
+00:16:56.993 --> 00:17:01.653
+But by the definition of a supremum,
+some zero lies in that strip,
+
+00:17:01.673 --> 00:17:04.293
+and its reciprocal
+would have a pole there.
+
+00:17:04.313 --> 00:17:08.863
+Contradiction. So beta
+star is at most sigma zero.
+
+00:17:10.133 --> 00:17:14.193
+Part one of the paper runs this
+machine at eleven twelfths.
+
+00:17:14.213 --> 00:17:19.393
+Part two starts from that result, so it
+may assume that no zero lies beyond eleven
+
+00:17:19.413 --> 00:17:21.713
+twelfths, and it pushes further.
+
+00:17:21.733 --> 00:17:26.833
+It rebuilds the sum with compensating
+prime factors, uses two unequal averaging
+
+00:17:26.853 --> 00:17:31.553
+scales, and adds moment bounds for
+two kinds of Dirichlet polynomials,
+
+00:17:31.573 --> 00:17:34.163
+each proved by its own recursion.
+
+00:17:34.437 --> 00:17:40.560
+The signal’s exponent moves from s minus
+two thirds to s minus eleven sixteenths,
+
+00:17:40.580 --> 00:17:43.240
+and the margins close at seven eighths.
+
+00:17:43.260 --> 00:17:48.570
+The stronger result is a bootstrap: the
+first line is the foothold for the second.
+
+00:17:52.633 --> 00:17:58.373
+Why does a theorem about this six-fold world
+settle questions about ordinary primes?
+
+00:17:58.393 --> 00:18:03.303
+Lift a Dirichlet character, chi, to
+the Eisenstein field through the norm.
+
+00:18:03.433 --> 00:18:09.253
+Its L-function splits into two ordinary
+ones: L of chi, and L of chi times the
+
+00:18:09.273 --> 00:18:15.143
+character modulo three. A zero of either
+factor would be a zero of the product.
+
+00:18:15.273 --> 00:18:20.903
+So the line transfers to every Dirichlet
+L-function, including zeta itself.
+
+00:18:22.167 --> 00:18:25.747
+Zeros control prime counts
+through the explicit formula,
+
+00:18:25.767 --> 00:18:31.717
+where a zero, rho, contributes a wave
+of size about x to the real part of rho.
+
+00:18:31.927 --> 00:18:36.627
+Keep every real part at most eleven
+twelfths, and the error in counting primes
+
+00:18:36.647 --> 00:18:42.547
+up to x, in any progression, is at most a
+constant times x to the eleven twelfths,
+
+00:18:42.567 --> 00:18:44.117
+times log x.
+
+00:18:44.233 --> 00:18:50.133
+That holds for every modulus up to x, and
+the constant is absolute and effective:
+
+00:18:50.153 --> 00:18:53.013
+it could, in principle, be computed.
+
+00:18:53.033 --> 00:18:57.173
+For large moduli, that error can
+be bigger than the count itself,
+
+00:18:57.193 --> 00:19:00.053
+so this is not the last
+word on progressions.
+
+00:19:00.073 --> 00:19:05.013
+It also rules out Landau–Siegel zeros,
+the exceptional zeros that have shadowed
+
+00:19:05.033 --> 00:19:07.703
+the subject for nearly a century.
+
+00:19:11.927 --> 00:19:14.627
+Some consequences are easy to state.
+
+00:19:14.647 --> 00:19:20.787
+Pick an odd prime, p. Half of the nonzero
+numbers modulo p are perfect squares,
+
+00:19:20.807 --> 00:19:25.557
+and half are not. How far must you
+search to find one that is not?
+
+00:19:25.667 --> 00:19:31.567
+Usually, not far. Among all the primes
+below a million, the worst case is first
+
+00:19:31.587 --> 00:19:38.687
+met at 366,791, where the
+first non-square is 43.
+
+00:19:38.707 --> 00:19:43.377
+Vinogradov conjectured that you never
+need to go beyond p to the epsilon.
+
+00:19:43.507 --> 00:19:48.767
+The September manuscript states that a
+fixed zero-free line gives much more:
+
+00:19:48.787 --> 00:19:53.377
+the first non-square is at
+most a fixed power of log p.
+
+00:19:54.667 --> 00:20:00.487
+That makes the search fast, so square roots
+modulo a prime can be found by a deterministic
+
+00:20:00.507 --> 00:20:04.647
+algorithm in polynomial
+time, with no coin flips.
+
+00:20:04.667 --> 00:20:08.967
+Miller’s primality test becomes
+deterministic and unconditional.
+
+00:20:08.987 --> 00:20:14.247
+And Euler’s list of sixty-five idoneal
+numbers, an open question since the eighteenth
+
+00:20:14.267 --> 00:20:17.497
+century, would be confirmed complete.
+
+00:20:18.927 --> 00:20:23.707
+Step back to the map. A century
+and a half of proven regions,
+
+00:20:23.727 --> 00:20:26.507
+every one thinning toward the edge.
+
+00:20:26.527 --> 00:20:31.147
+If these manuscripts are right, there
+is now a line that does not move:
+
+00:20:31.167 --> 00:20:35.037
+seven eighths, at every
+height, for every character.
+
+00:20:35.167 --> 00:20:38.477
+And the line one half is still far away.
+
+00:20:38.607 --> 00:20:43.467
+Between seven eighths and one half lies
+the rest of the Riemann hypothesis,
+
+00:20:43.487 --> 00:20:47.227
+and much of what we believe about
+the primes but cannot prove.
+
+00:20:47.247 --> 00:20:49.757
+The manuscripts say so themselves.
+
+00:20:51.113 --> 00:20:55.253
+Results like this are checked the
+way mathematics always checks them:
+
+00:20:55.273 --> 00:20:58.933
+line by line, by people who read slowly.
+
+00:20:58.953 --> 00:21:03.973
+If this line holds, it is one of the great
+advances in the history of the subject.
+
+00:21:03.993 --> 00:21:09.653
+A border that holds, after a hundred and
+sixty-seven years of borders that shrank.
+
+00:21:09.673 --> 00:21:13.223
+And beyond it, the ground
+is still unsurveyed.

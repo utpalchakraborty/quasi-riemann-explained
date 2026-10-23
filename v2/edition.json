@@ -1,0 +1,19 @@
+{
+  "edition": "v2-the-fixed-frontier",
+  "updated": "2026-10-23",
+  "duration_seconds": 1282.8,
+  "chapter_count": 15,
+  "narration": "ElevenLabs Sarah (EXAVITQu4vr4xnSDxMaL), eleven_v4",
+  "video": {
+    "file": "The-Fixed-Frontier.mp4",
+    "sha256": "6fbff291b238b18394a3894c16277dd6c44c9682d4132210e9b8fba99a306561",
+    "bytes": 71961896,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_bitrate": 349481
+  },
+  "independent_proof_verification": false,
+  "source": "studio/ (Remotion project)",
+  "audio": "mono AAC 96 kb/s, -19.1 LUFS integrated, true peak -1.2 dBFS"
+}
