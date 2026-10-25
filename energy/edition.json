@@ -1,0 +1,20 @@
+{
+  "edition": "the-energy-budget",
+  "updated": "2026-10-25",
+  "duration_seconds": 1212.534,
+  "chapter_count": 10,
+  "narration": "ElevenLabs Sarah (EXAVITQu4vr4xnSDxMaL), eleven_v4",
+  "video": {
+    "file": "The-Energy-Budget.mp4",
+    "sha256": "d908fba750786fec6aad2015b6375bf39a2cb025fec63b546ddd9f37dde35e93",
+    "bytes": 47257645,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_bitrate": 210950
+  },
+  "audio_loudness": "I: -19.1 LUFS Peak: -1.3 dBFS",
+  "independent_proof_verification": false,
+  "source": "studio-energy/ (Remotion project)",
+  "companion": "v2/ (The Fixed Frontier)"
+}

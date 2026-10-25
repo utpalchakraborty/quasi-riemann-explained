@@ -1,0 +1,72 @@
+[
+  {
+    "id": "open",
+    "index": "",
+    "title": "A thousand coins",
+    "start": 0,
+    "duration": 87.467
+  },
+  {
+    "id": "energy",
+    "index": "1",
+    "title": "What energy means",
+    "start": 87.467,
+    "duration": 142.4
+  },
+  {
+    "id": "family",
+    "index": "2",
+    "title": "Why a family",
+    "start": 229.867,
+    "duration": 185.2
+  },
+  {
+    "id": "demands",
+    "index": "3",
+    "title": "Two demands",
+    "start": 415.067,
+    "duration": 129.2
+  },
+  {
+    "id": "spend",
+    "index": "4",
+    "title": "Spending it",
+    "start": 544.267,
+    "duration": 120
+  },
+  {
+    "id": "dual",
+    "index": "5",
+    "title": "Proving it, I: the dual side",
+    "start": 664.267,
+    "duration": 147.9
+  },
+  {
+    "id": "theta",
+    "index": "6",
+    "title": "Proving it, II: the theta function pays",
+    "start": 812.167,
+    "duration": 143.6
+  },
+  {
+    "id": "recursion",
+    "index": "7",
+    "title": "Proving it, III: the debt and the recursion",
+    "start": 955.767,
+    "duration": 146.933
+  },
+  {
+    "id": "price",
+    "index": "8",
+    "title": "The price of the budget",
+    "start": 1102.7,
+    "duration": 58.367
+  },
+  {
+    "id": "close",
+    "index": "",
+    "title": "The ledger closes",
+    "start": 1161.067,
+    "duration": 51.467
+  }
+]

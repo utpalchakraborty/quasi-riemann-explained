@@ -4,6 +4,8 @@
 
 **Second edition:** [The Fixed Frontier](https://utpalchakraborty.github.io/quasi-riemann-explained/v2/), a new film with a new script, design and animation. Its source is in `studio/` and its files in `v2/`. The first edition below is unchanged.
 
+**Deep dive:** [The Energy Budget](https://utpalchakraborty.github.io/quasi-riemann-explained/energy/), a 20-minute film on the one estimate the October proof rests on: what an energy budget is, how it is spent to reach 11/12, and how it is proved. Its source is in `studio-energy/` (structure from `briefs/energy-budget.md`) and its files in `energy/`. The Fixed Frontier's page links to it from its chapter 4 and chapter 9 notes.
+
 An 18 minute 49 second animated explainer, narrated by ElevenLabs Sarah, with a dark theme, 13 chapters, English captions, a transcript, and equations. The film is 1920 × 1080 at 30 fps.
 
 The latest edition opens with an 87-second, two-slide proof roadmap: the central cancellation-to-zero-free-region argument, followed by the strategy behind the 11/12 exponent. All 12 original chapters and their narration are preserved.

@@ -50,6 +50,7 @@ summary .t{color:var(--mist);font-variant-numeric:tabular-nums;font-size:15px}
 summary:focus-visible{outline:2px solid var(--gilt);outline-offset:2px}
 .body{display:grid;gap:14px;padding:0 0 24px 56px;max-width:78ch;min-width:0}
 .src{color:var(--mist);font-style:italic;font-size:15px}
+.more{border-left:2px solid var(--gilt);padding-left:12px;font-size:16px}
 .seek{all:unset;cursor:pointer;color:var(--gilt);font-variant-numeric:tabular-nums;font-size:14px;margin-right:6px}
 .seek:focus-visible{outline:2px solid var(--gilt)}
 .eq{overflow-x:auto;padding:6px 0;color:var(--paper)}
@@ -89,7 +90,7 @@ footer{color:var(--mist);font-size:14px;border-top:1px solid var(--rule);padding
 </ol></nav>
 </section>
 <div class="facts">
-<a href="The-Fixed-Frontier.mp4?v=6fbff291b238">Download the MP4</a><a href="transcript.txt?v=6fbff291b238">Transcript</a><a href="subtitles.srt?v=6fbff291b238">Captions (SRT)</a><a href="chapters.json?v=6fbff291b238">Chapter times</a><a href="../">First edition</a>
+<a href="The-Fixed-Frontier.mp4?v=6fbff291b238">Download the MP4</a><a href="transcript.txt?v=6fbff291b238">Transcript</a><a href="subtitles.srt?v=6fbff291b238">Captions (SRT)</a><a href="chapters.json?v=6fbff291b238">Chapter times</a><a href="../">First edition</a><a href="../energy/">The Energy Budget: a full film on chapter 4</a>
 </div>
 <p class="note">This film explains the arguments in two manuscripts released by OpenAI. It does not verify them; whether the proofs are correct is for careful readers to settle. Figures in the film are tagged as computed values, schematic, or claimed in the manuscript.</p>
 <section aria-labelledby="read">
@@ -161,6 +162,7 @@ footer{color:var(--mist);font-size:14px;border-top:1px solid var(--rule);padding
 <summary><span class="n">4</span><span class="c">An energy budget</span><span class="t">08:09</span></summary>
 <div class="body">
 <p class="src">October manuscript, §2.2 and Proposition 3.1</p>
+<p class="more">Go deeper: <a href="../energy/">The Energy Budget</a>, a twenty-minute film on this one estimate: what it means, how it is spent, and how it is proved.</p>
 <p><button type="button" class="seek" data-t="492.50" aria-label="Play from 08:12">08:12</button> The central estimate of the October paper is about the whole family. Add up the squared sizes of A u, for every u with norm up to H. The total is at most about D times H, where H is a little bigger than D: D to the one plus theta, with theta small and positive.</p>
 <p><button type="button" class="seek" data-t="512.17" aria-label="Play from 08:32">08:32</button> There are about H members, so a typical member has size about the square root of D. That is square-root cancellation, on average.</p>
 <p><button type="button" class="seek" data-t="523.23" aria-label="Play from 08:43">08:43</button> But an average says nothing about any single member. One huge sum can hide among many small ones, and the budget allows it. The member we care about, u equal to one, is a single row. To pin it down, we need the target to show up many times.</p>
@@ -229,6 +231,7 @@ M834 80h400000v40h-400000z"/></svg></span></span></span><span class="vlist-s">�
 <summary><span class="n">9</span><span class="c">The engine: a shrinking recursion</span><span class="t">14:45</span></summary>
 <div class="body">
 <p class="src">October manuscript, §2.5 and §5</p>
+<p class="more">Go deeper: <a href="../energy/">The Energy Budget</a>, three chapters on how the energy budget is proved, from Poisson summation to this recursion.</p>
 <p><button type="button" class="seek" data-t="889.47" aria-label="Play from 14:49">14:49</button> But completion borrowed something. The cube terms were never in the original sum. Möbius inversion takes them back out, and for small b that is harmless. For large b, it leaves remainders: energies of the same kind, at a smaller column scale, X over the norm of b cubed, but still over the full range of rows. That is not progress yet.</p>
 <p><button type="button" class="seek" data-t="915.23" aria-label="Play from 15:15">15:15</button> So the paper applies Poisson summation twice more, after deliberately widening an intermediate sum, which is allowed because every term in it is non-negative. The result is the same kind of estimate, with both scales divided by the norm of b cubed. Rows and columns shrink together, and their ratio never changes.</p>
 <p><button type="button" class="seek" data-t="936.10" aria-label="Play from 15:36">15:36</button> And the shrinking is real. Each step shrinks the row range by a factor of at least D to the two theta. Because theta is positive, a bounded number of steps brings every branch down to a size where simple counting is enough. That is why theta could be small, but never zero.</p>

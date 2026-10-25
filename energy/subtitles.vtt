@@ -1,0 +1,1026 @@
+WEBVTT
+
+00:00:00.780 --> 00:00:03.080
+Flip a coin a thousand times.
+
+00:00:03.100 --> 00:00:07.930
+Count plus one for heads and minus one
+for tails, and keep a running total.
+
+00:00:08.060 --> 00:00:11.400
+The total wanders. This walk ends at four.
+
+00:00:11.420 --> 00:00:15.880
+The next ends at twenty, and the
+one after that at minus thirty-two.
+
+00:00:15.900 --> 00:00:20.170
+Before the first flip, nobody
+can say where a walk will finish.
+
+00:00:21.433 --> 00:00:23.543
+So ask a different question.
+
+00:00:23.673 --> 00:00:28.853
+Square each final total, so the sign no
+longer matters, and average the squares
+
+00:00:28.873 --> 00:00:33.493
+over many walks. After a handful
+of walks the average jumps around.
+
+00:00:33.513 --> 00:00:38.903
+After four thousand, it has settled
+near one thousand: the number of steps.
+
+00:00:39.193 --> 00:00:43.893
+That is a fact about none of the
+walks, and a fact about all of them.
+
+00:00:43.913 --> 00:00:46.800
+It does not say where
+any single walk ends.
+
+00:00:46.820 --> 00:00:49.783
+It says how much room the
+walks take up together.
+
+00:00:51.133 --> 00:00:56.153
+The October quasi-Riemann manuscript
+rests on one estimate of this kind,
+
+00:00:56.173 --> 00:01:00.473
+for a family of sums that nobody
+can compute one at a time.
+
+00:01:00.493 --> 00:01:02.843
+Spending it takes one paragraph.
+
+00:01:02.893 --> 00:01:05.323
+Proving it takes most of the paper.
+
+00:01:05.533 --> 00:01:10.033
+This film is about that estimate:
+what it means, how it is spent,
+
+00:01:10.053 --> 00:01:11.803
+and how it is earned.
+
+00:01:11.933 --> 00:01:14.793
+This film explains how the arguments work.
+
+00:01:14.813 --> 00:01:17.483
+It does not certify that they are correct.
+
+00:01:17.613 --> 00:01:21.803
+That is the work of careful
+readers, and it takes time.
+
+00:01:30.967 --> 00:01:36.517
+Start with the word. An energy,
+in this film, is a sum of squares.
+
+00:01:36.647 --> 00:01:40.197
+Take a list of numbers,
+square each one, and add.
+
+00:01:40.327 --> 00:01:45.557
+A square is never negative, so it
+forgets the sign and keeps only the size.
+
+00:01:45.767 --> 00:01:51.187
+Draw each number as a square whose side
+is its size, and the energy is the total
+
+00:01:51.207 --> 00:01:52.277
+area.
+
+00:01:53.533 --> 00:01:56.523
+Why squares, and not plain sizes?
+
+00:01:56.573 --> 00:01:59.993
+Because squares add up
+over perpendicular pieces.
+
+00:02:00.013 --> 00:02:04.953
+That is Pythagoras: the square on the long
+side equals the two squares on the short
+
+00:02:04.973 --> 00:02:08.793
+sides. Fourier analysis
+obeys the same law.
+
+00:02:08.813 --> 00:02:13.803
+Split a signal into waves, and its energy
+equals the total energy of the waves.
+
+00:02:13.933 --> 00:02:18.713
+That is Parseval’s identity, and it is why
+physicists call the integral of a signal
+
+00:02:18.733 --> 00:02:22.523
+squared its energy. The word stuck.
+
+00:02:23.800 --> 00:02:26.580
+Now square a sum of N terms.
+
+00:02:26.600 --> 00:02:30.260
+The square spreads into a
+grid of N squared products.
+
+00:02:30.280 --> 00:02:35.270
+The N products on the diagonal are the
+terms squared, and they are never negative.
+
+00:02:35.480 --> 00:02:39.540
+All the cancellation lives off
+the diagonal, in the cross terms,
+
+00:02:39.560 --> 00:02:42.070
+where a plus can meet a minus.
+
+00:02:42.200 --> 00:02:46.070
+For random signs, the cross
+terms average out to nothing.
+
+00:02:46.120 --> 00:02:51.700
+Only the diagonal survives, so the energy
+is about N, and a typical sum has size
+
+00:02:51.720 --> 00:02:53.590
+about the square root of N.
+
+00:02:53.720 --> 00:02:59.350
+That is square-root cancellation, the
+benchmark for every sum in this film.
+
+00:03:00.600 --> 00:03:04.470
+Arithmetic is not random,
+but it can look it.
+
+00:03:04.680 --> 00:03:08.820
+Here is the Mertens function, the
+running total of Möbius signs,
+
+00:03:08.840 --> 00:03:13.990
+computed to twelve hundred, and its
+square beside the line y equals x.
+
+00:03:14.120 --> 00:03:15.990
+A picture proves nothing.
+
+00:03:16.200 --> 00:03:20.980
+A bound of x to the one half plus epsilon
+for this function is equivalent to the
+
+00:03:21.000 --> 00:03:22.870
+Riemann hypothesis.
+
+00:03:24.133 --> 00:03:28.643
+Now take a whole family of sums
+and add the squares of all of them.
+
+00:03:28.693 --> 00:03:33.363
+An upper bound for that total is what
+this film calls an energy budget.
+
+00:03:33.493 --> 00:03:38.273
+The manuscripts call it a mean-square
+estimate, and the word energy appears in
+
+00:03:38.293 --> 00:03:40.323
+their labels and section titles.
+
+00:03:40.533 --> 00:03:43.683
+A budget says nothing
+about any one member.
+
+00:03:43.733 --> 00:03:46.323
+An energy is a sum of squares.
+
+00:03:46.373 --> 00:03:49.283
+A budget is a promise about the sum.
+
+00:03:53.367 --> 00:03:57.477
+The sum the October proof
+needs is called A one of D.
+
+00:03:57.607 --> 00:04:02.067
+It adds Möbius values, weighted
+by a fixed character, nu,
+
+00:04:02.087 --> 00:04:06.437
+over the ideals of the Eisenstein
+integers with norm about D.
+
+00:04:06.567 --> 00:04:12.027
+It has about D terms. The goal is to
+show that it is much smaller than D,
+
+00:04:12.047 --> 00:04:16.197
+because enough cancellation in it
+rules out zeros of an L-function.
+
+00:04:16.327 --> 00:04:20.837
+The Fixed Frontier explains why,
+in its chapters two and six.
+
+00:04:22.100 --> 00:04:26.960
+One sum on its own is hard, because
+nothing controls its cross terms.
+
+00:04:26.980 --> 00:04:32.720
+A family is easier. Lay it out as a table:
+each row is one member of the family,
+
+00:04:32.740 --> 00:04:34.930
+and each column is one term.
+
+00:04:35.060 --> 00:04:39.650
+The paper uses exactly these
+words, rows and columns.
+
+00:04:39.767 --> 00:04:42.277
+Square every row and add.
+
+00:04:42.327 --> 00:04:46.827
+Swap the order of summation, and
+each cross term pairs two columns,
+
+00:04:46.847 --> 00:04:48.947
+averaged over all the rows.
+
+00:04:48.967 --> 00:04:53.107
+If different columns are orthogonal,
+like perpendicular directions,
+
+00:04:53.127 --> 00:04:57.877
+that average is small. The family
+cancels the cross terms for you.
+
+00:04:59.167 --> 00:05:02.157
+This gives budgets a characteristic shape.
+
+00:05:02.207 --> 00:05:06.827
+The energy is at most the number
+of rows plus the number of columns,
+
+00:05:06.847 --> 00:05:10.827
+times the energy of the
+coefficients, up to tiny losses.
+
+00:05:10.847 --> 00:05:14.077
+The classical example is the large sieve.
+
+00:05:14.200 --> 00:05:17.350
+And rows plus columns cannot be beaten.
+
+00:05:17.400 --> 00:05:21.300
+Put all the weight on one
+column, and every row sees it:
+
+00:05:21.320 --> 00:05:23.750
+the energy is the number of rows.
+
+00:05:23.880 --> 00:05:27.380
+Let one row be blind to the
+differences between columns,
+
+00:05:27.400 --> 00:05:32.500
+and that row alone collects them all:
+the energy is the number of columns.
+
+00:05:32.520 --> 00:05:36.310
+A budget of this shape is
+as good as a budget gets.
+
+00:05:37.567 --> 00:05:42.877
+The paper’s family twists the target
+by a sextic phase, chi n of u.
+
+00:05:43.007 --> 00:05:49.147
+The rows are Eisenstein integers u with
+norm up to H, where H is D to the one
+
+00:05:49.167 --> 00:05:51.597
+plus theta, a little more than D.
+
+00:05:51.807 --> 00:05:55.517
+The columns are the ideals
+n with norm about D.
+
+00:05:55.647 --> 00:06:01.227
+Proposition 3.1 says that the energy of
+all the rows together is at most about
+
+00:06:01.247 --> 00:06:03.037
+D times H.
+
+00:06:03.167 --> 00:06:09.147
+There are about H rows, so a typical row
+has energy about D and size about the
+
+00:06:09.167 --> 00:06:14.107
+square root of D. That is
+square-root cancellation, on average.
+
+00:06:14.127 --> 00:06:16.507
+A budget is cheaper than a bound.
+
+00:06:16.527 --> 00:06:21.757
+You pay for it with orthogonality, and
+you get it for the whole family at once.
+
+00:06:23.033 --> 00:06:28.813
+Here is a real family, computed at a
+small scale: D equal to two thousand,
+
+00:06:28.833 --> 00:06:34.413
+with 15,528 rows and 847 columns.
+
+00:06:34.433 --> 00:06:40.133
+Each square is one row. No row stands
+out: the largest is about three times the
+
+00:06:40.153 --> 00:06:44.853
+typical size. And the total comes within
+five percent of what random signs would
+
+00:06:44.873 --> 00:06:45.783
+give.
+
+00:06:45.980 --> 00:06:50.760
+At a scale this small, that tests
+nothing about the paper’s claim.
+
+00:06:50.780 --> 00:06:54.410
+It shows only what a budget
+looks like when it holds.
+
+00:06:58.567 --> 00:07:03.027
+A family has two jobs, and they
+pull in opposite directions.
+
+00:07:03.047 --> 00:07:08.787
+To prove a budget, the members must
+differ: orthogonality is what pays for it.
+
+00:07:08.807 --> 00:07:13.907
+To use a budget on one sum, that sum
+must appear in the family many times:
+
+00:07:13.927 --> 00:07:16.037
+the members must agree.
+
+00:07:17.300 --> 00:07:19.650
+The sextic phase does both.
+
+00:07:19.780 --> 00:07:22.770
+Fix a column n and let u run.
+
+00:07:22.900 --> 00:07:28.530
+Chi n of u is a sixth root of one,
+or zero, and it changes with u.
+
+00:07:28.660 --> 00:07:32.370
+Different columns change
+differently, so they are orthogonal.
+
+00:07:32.420 --> 00:07:34.290
+That is diversity.
+
+00:07:34.400 --> 00:07:38.910
+Now set u equal to p to
+the sixth, for a prime p.
+
+00:07:39.040 --> 00:07:42.990
+A sixth root of one, raised
+to the sixth power, is one.
+
+00:07:43.120 --> 00:07:47.500
+So every phase becomes one, except
+on the terms that p divides,
+
+00:07:47.520 --> 00:07:53.740
+where it is zero. If p has norm about
+Y, that row is the target minus about
+
+00:07:53.760 --> 00:07:57.630
+D over Y terms. That is repetition.
+
+00:07:58.900 --> 00:08:01.730
+The price of repetition is rarity.
+
+00:08:01.780 --> 00:08:04.560
+Copies sit only at sixth powers.
+
+00:08:04.580 --> 00:08:10.480
+For p to the sixth to be a row, the norm
+of p can be at most H to the one sixth.
+
+00:08:10.500 --> 00:08:15.040
+Call that Y. So the family holds
+about Y copies of the target,
+
+00:08:15.060 --> 00:08:18.130
+up to a logarithm, not H of them.
+
+00:08:18.267 --> 00:08:22.537
+Here is some of this film’s own
+arithmetic, not a claim from the paper.
+
+00:08:22.667 --> 00:08:28.247
+If the twist had order k instead of
+six, the copies would sit at p to the k,
+
+00:08:28.267 --> 00:08:31.607
+and the same spending would
+give the exponent on the dial.
+
+00:08:31.627 --> 00:08:37.287
+At k equal to six, it is eleven
+twelfths, plus five theta over twelve.
+
+00:08:37.307 --> 00:08:41.257
+Lower orders give more
+copies and smaller exponents.
+
+00:08:41.447 --> 00:08:46.227
+At the bottom of the dial, with no twist
+at all, every row would be nearly the
+
+00:08:46.247 --> 00:08:50.787
+target, and a budget of the same shape
+would give the Riemann hypothesis for this
+
+00:08:50.807 --> 00:08:56.707
+L-function. But that family has no
+orthogonality, and nobody can prove its budget.
+
+00:08:56.727 --> 00:09:01.507
+The sixth power is where provable
+meets useful: diverse enough to prove,
+
+00:09:01.527 --> 00:09:03.717
+repetitive enough to spend.
+
+00:09:07.767 --> 00:09:09.907
+Here is how the budget is spent.
+
+00:09:09.927 --> 00:09:15.507
+Take every primary prime p with
+norm between Y over two and Y.
+
+00:09:15.527 --> 00:09:20.547
+Landau’s prime ideal theorem says
+there are about Y over log Y of them.
+
+00:09:20.567 --> 00:09:24.787
+Call that number J. Their
+sixth powers are distinct rows,
+
+00:09:24.807 --> 00:09:30.117
+and each of those rows is the target,
+up to an error of about D over Y.
+
+00:09:31.400 --> 00:09:33.620
+The budget covers every row.
+
+00:09:33.640 --> 00:09:36.710
+Keep only the J copies and drop the rest.
+
+00:09:36.840 --> 00:09:42.260
+That is allowed because every row contributes
+a square, and squares are never negative,
+
+00:09:42.280 --> 00:09:45.140
+so what is left is at most the whole.
+
+00:09:45.160 --> 00:09:49.350
+You may drop any part of an energy,
+because every part is a square.
+
+00:09:49.480 --> 00:09:53.350
+What you keep is the
+target, many times over.
+
+00:09:54.633 --> 00:09:59.333
+For each copy, the target squared
+is at most twice the copy squared,
+
+00:09:59.353 --> 00:10:01.383
+plus twice the error squared.
+
+00:10:01.513 --> 00:10:03.703
+Average over the J copies.
+
+00:10:03.753 --> 00:10:08.533
+The target squared is at most two
+over J times the energy of the copies,
+
+00:10:08.553 --> 00:10:13.623
+plus the error squared. And the energy
+of the copies is at most the budget.
+
+00:10:13.813 --> 00:10:18.033
+Put in the numbers. The budget
+is D to the two plus theta.
+
+00:10:18.053 --> 00:10:23.073
+Dividing by J removes a factor
+of about Y, the sixth root of H.
+
+00:10:23.093 --> 00:10:27.953
+What remains is D to the eleven
+sixths, plus five theta over six.
+
+00:10:27.973 --> 00:10:32.113
+The error term is D to the five
+thirds, minus theta over three,
+
+00:10:32.133 --> 00:10:35.833
+which is smaller. Take the
+square root: eleven twelfths,
+
+00:10:35.853 --> 00:10:38.113
+plus five theta over twelve.
+
+00:10:38.133 --> 00:10:40.323
+Then let theta be small.
+
+00:10:41.600 --> 00:10:44.030
+There is a second way to spend a budget.
+
+00:10:44.080 --> 00:10:50.780
+If the total is at most B, then at most
+B over T squared rows can exceed T,
+
+00:10:50.800 --> 00:10:53.710
+because each of them alone uses T squared.
+
+00:10:53.760 --> 00:10:57.820
+Counting outliers this way is
+how zero-density estimates work,
+
+00:10:57.840 --> 00:11:01.660
+and it is how the September
+manuscript spends its own estimates,
+
+00:11:01.680 --> 00:11:03.710
+as the last chapter shows.
+
+00:11:07.767 --> 00:11:10.757
+Now the hard part: earning the budget.
+
+00:11:10.967 --> 00:11:15.587
+Nobody can compute these sums one
+by one, so the proof never does.
+
+00:11:15.607 --> 00:11:18.387
+It transforms the energy instead.
+
+00:11:18.407 --> 00:11:23.507
+A Fourier transform keeps the total
+energy and scrambles everything else.
+
+00:11:23.527 --> 00:11:28.147
+That is Plancherel’s theorem, and it is
+why the proof works with energies rather
+
+00:11:28.167 --> 00:11:30.037
+than with single sums.
+
+00:11:31.300 --> 00:11:37.040
+Expand the squares. Each cross
+term pairs two columns, n and m,
+
+00:11:37.060 --> 00:11:41.800
+and sums the product of their phases
+over all the rows u in a disk.
+
+00:11:41.820 --> 00:11:47.080
+Poisson summation rewrites a sum over
+positions as a sum over frequencies.
+
+00:11:47.100 --> 00:11:52.690
+The sum over u becomes a sum over
+a new variable, h, the dual row.
+
+00:11:52.800 --> 00:11:54.750
+And the row range flips.
+
+00:11:54.960 --> 00:11:59.020
+H rows become about D
+squared over H dual rows.
+
+00:11:59.040 --> 00:12:01.100
+Call that number script H.
+
+00:12:01.120 --> 00:12:07.390
+With H equal to D to the one plus theta,
+script H is D to the one minus theta.
+
+00:12:07.520 --> 00:12:11.420
+The two row ranges always
+multiply to D squared.
+
+00:12:11.440 --> 00:12:14.190
+Now there are fewer rows than columns.
+
+00:12:15.467 --> 00:12:20.727
+The Fourier transform of a sextic
+phase is a Gauss sum: roots of one,
+
+00:12:20.747 --> 00:12:22.967
+weighted by waves, added up.
+
+00:12:22.987 --> 00:12:27.847
+For ordinary integers there is a classical
+identity: the square of a quadratic
+
+00:12:27.867 --> 00:12:30.087
+Gauss sum is just a sign.
+
+00:12:30.107 --> 00:12:35.097
+The paper uses a sextic relative
+of it, after Hasse and Heath-Brown.
+
+00:12:35.233 --> 00:12:41.053
+It says that the Möbius value times a
+sextic Gauss sum equals a cubic Gauss sum,
+
+00:12:41.073 --> 00:12:43.103
+up to factors of size one.
+
+00:12:43.233 --> 00:12:45.743
+The Möbius function has been absorbed.
+
+00:12:45.873 --> 00:12:51.183
+Checked here at twenty-two primes, the two
+sides agree to fourteen decimal places.
+
+00:12:51.313 --> 00:12:57.453
+What is left is a new family, B h of
+X: cubic Gauss sums as coefficients,
+
+00:12:57.473 --> 00:13:02.863
+twisted by phases in h, up to fixed
+twists that the outline suppresses.
+
+00:13:04.133 --> 00:13:08.913
+Schematically, the original
+energy is at most D times H,
+
+00:13:08.933 --> 00:13:14.113
+plus H over D times the energy of
+the new family over the dual rows.
+
+00:13:14.133 --> 00:13:19.793
+So the budget now asks for this:
+the energy of B, over script H rows,
+
+00:13:19.813 --> 00:13:22.003
+at most about D squared.
+
+00:13:22.213 --> 00:13:25.203
+Poisson summation does
+not shrink the energy.
+
+00:13:25.253 --> 00:13:30.113
+It moves it to a side where the rows are
+short and the coefficients are Gauss sums,
+
+00:13:30.133 --> 00:13:31.603
+which have a theory.
+
+00:13:35.667 --> 00:13:38.337
+Cubic Gauss sums are not random.
+
+00:13:38.387 --> 00:13:43.007
+Kubota and Patterson showed that they are
+the Fourier coefficients of a cubic theta
+
+00:13:43.027 --> 00:13:47.967
+function, an automorphic form on
+three-dimensional hyperbolic space.
+
+00:13:47.987 --> 00:13:53.057
+Automorphic forms have symmetry, and
+symmetry gives a transformation law.
+
+00:13:53.167 --> 00:13:58.507
+The law wants every index the theta
+function contains: each square-free n,
+
+00:13:58.527 --> 00:14:02.237
+and also n times b cubed, for every b.
+
+00:14:02.367 --> 00:14:06.427
+The family B h has only
+the square-free indices.
+
+00:14:06.447 --> 00:14:10.987
+So the proof completes the sum, adding
+the cube terms, to make a new sum,
+
+00:14:11.007 --> 00:14:14.507
+T h of X. The rows are unchanged.
+
+00:14:14.527 --> 00:14:18.477
+The cube terms are borrowed, and
+chapter seven pays them back.
+
+00:14:19.767 --> 00:14:22.387
+Then the transformation acts.
+
+00:14:22.407 --> 00:14:29.107
+A long sum over n, with norm about X, becomes
+a shorter dual sum over a new variable,
+
+00:14:29.127 --> 00:14:32.197
+m. And the twist changes character.
+
+00:14:32.327 --> 00:14:37.907
+At each prime dividing h, the Fourier
+side contributed chi to the minus one,
+
+00:14:37.927 --> 00:14:41.557
+and the theta side contributes
+chi to the minus two.
+
+00:14:41.747 --> 00:14:47.047
+Together that is chi to the minus
+three, which equals chi cubed.
+
+00:14:47.067 --> 00:14:51.167
+And a sixth root of one,
+cubed, is plus or minus one.
+
+00:14:51.187 --> 00:14:53.567
+The twist is now quadratic.
+
+00:14:53.587 --> 00:14:59.327
+A sixth-order twist, cubed, is a sign,
+and signs are what the sharpest sieve can
+
+00:14:59.347 --> 00:15:00.257
+price.
+
+00:15:01.533 --> 00:15:06.313
+Goldmakher and Louvel’s quadratic
+large sieve, building on Heath-Brown,
+
+00:15:06.333 --> 00:15:11.673
+gives rows plus columns, up to tiny
+losses: the shape from chapter two,
+
+00:15:11.693 --> 00:15:15.993
+now paying the bill. The completed
+energy comes in at script H,
+
+00:15:16.013 --> 00:15:18.873
+plus script H squared over X.
+
+00:15:18.893 --> 00:15:22.123
+At the basic scales,
+that is within budget.
+
+00:15:23.400 --> 00:15:25.510
+Why insist on quadratic?
+
+00:15:25.640 --> 00:15:31.380
+For a family with M rows and L columns, the
+general sieve for higher-order characters
+
+00:15:31.400 --> 00:15:35.940
+carries an extra term: M L
+together, to the two thirds.
+
+00:15:35.960 --> 00:15:41.060
+Here the rows are D to the one minus theta,
+and the dual columns are D to the one
+
+00:15:41.080 --> 00:15:46.470
+minus two theta. Rows plus columns
+is about D to the one minus theta.
+
+00:15:46.600 --> 00:15:50.740
+The extra term is D to the
+four thirds, minus two theta,
+
+00:15:50.760 --> 00:15:55.190
+larger by a power of D. With
+it, the count would fail.
+
+00:15:59.267 --> 00:16:03.247
+Completion borrowed the cube
+terms, and they must be returned.
+
+00:16:03.267 --> 00:16:08.327
+They cannot simply be dropped, because
+contributions from different cubes can cancel.
+
+00:16:08.347 --> 00:16:13.807
+Möbius inversion returns them exactly:
+the sum the proof needs is a weighted sum
+
+00:16:13.827 --> 00:16:18.887
+of completed sums, at the smaller
+column scales X over the norm of d,
+
+00:16:18.907 --> 00:16:19.937
+cubed.
+
+00:16:21.200 --> 00:16:25.820
+For small d, Cauchy–Schwarz and
+the completed bound pay directly,
+
+00:16:25.840 --> 00:16:28.190
+up to a cutoff, H sub c.
+
+00:16:28.400 --> 00:16:32.910
+At the basic scales, the cutoff
+is D to the two theta over three.
+
+00:16:33.040 --> 00:16:36.430
+Here theta earns its
+keep for the first time.
+
+00:16:36.567 --> 00:16:42.467
+Large d leave remainders: energies of
+the same kind, at a shorter column scale,
+
+00:16:42.487 --> 00:16:47.227
+L sub b, equal to X over
+the norm of b, cubed.
+
+00:16:47.247 --> 00:16:51.717
+But the rows have not shrunk, and
+the bound still required is X.
+
+00:16:51.847 --> 00:16:54.117
+That is not progress yet.
+
+00:16:55.367 --> 00:16:58.867
+So the proof applies Poisson
+summation twice more.
+
+00:16:58.887 --> 00:17:05.107
+The first, in h, produces new rows,
+y, with norm up to L sub b squared
+
+00:17:05.127 --> 00:17:09.747
+over script H. Then it deliberately
+enlarges that row range,
+
+00:17:09.767 --> 00:17:14.757
+which is allowed because every term is a
+square, and squares are never negative.
+
+00:17:14.887 --> 00:17:18.677
+It is the same positivity
+that let the budget be spent.
+
+00:17:18.800 --> 00:17:22.420
+The second Poisson summation
+brings the rows back shorter,
+
+00:17:22.440 --> 00:17:25.550
+and the coefficients
+return to cubic Gauss sums.
+
+00:17:25.760 --> 00:17:31.100
+Both scales have shrunk by the norm of
+b cubed, and their ratio is unchanged.
+
+00:17:31.120 --> 00:17:33.470
+This is the transfer estimate.
+
+00:17:34.733 --> 00:17:37.243
+Now the bound runs as a recursion.
+
+00:17:37.293 --> 00:17:40.873
+The energy at one level, measured
+against its column scale,
+
+00:17:40.893 --> 00:17:44.843
+is at most one plus the
+same measure one level down.
+
+00:17:44.973 --> 00:17:50.073
+Because the norm of b exceeds the cutoff,
+each level shrinks the rows by at least
+
+00:17:50.093 --> 00:17:52.603
+a factor of D to the two theta.
+
+00:17:52.813 --> 00:17:56.553
+After a bounded number of
+levels, depending only on theta,
+
+00:17:56.573 --> 00:18:01.643
+the row parameter is at most one,
+and plain counting finishes the job.
+
+00:18:01.904 --> 00:18:06.787
+The full proof carries extra twists,
+common factors, and dyadic ranges through
+
+00:18:06.807 --> 00:18:10.747
+every step, by Heath-Brown’s
+admissible-exponent method.
+
+00:18:10.767 --> 00:18:12.467
+But the skeleton is this.
+
+00:18:12.487 --> 00:18:15.267
+The proof never pays the energy outright.
+
+00:18:15.287 --> 00:18:19.347
+It pays a bounded number of
+instalments, each at a smaller scale,
+
+00:18:19.367 --> 00:18:22.117
+and the last one is small enough to count.
+
+00:18:26.200 --> 00:18:30.260
+Every step had a price. Theta is the fuel.
+
+00:18:30.280 --> 00:18:34.820
+It makes the dual rows shorter than the
+columns, the positive gap that the iteration
+
+00:18:34.840 --> 00:18:38.230
+needs, and it makes the recursion shrink.
+
+00:18:38.280 --> 00:18:42.900
+It costs five theta over twelve in
+the exponent, so it is kept small,
+
+00:18:42.920 --> 00:18:48.980
+but never zero. Epsilon is the friction:
+every sieve loses a tiny power,
+
+00:18:49.000 --> 00:18:52.790
+and a bounded number of steps
+loses a bounded number of them.
+
+00:18:54.067 --> 00:18:58.337
+The September manuscript runs
+the same idea at a larger scale.
+
+00:18:58.387 --> 00:19:02.047
+Its reflected-energy bounds
+control completed theta rows,
+
+00:19:02.067 --> 00:19:05.887
+and two moment bounds, each
+proved by its own recursion,
+
+00:19:05.907 --> 00:19:09.137
+limit how many rows a
+zero detector can flag.
+
+00:19:09.267 --> 00:19:13.967
+A budget spent by counting outliers,
+with several accounts open at once.
+
+00:19:13.987 --> 00:19:18.607
+Keep theta positive and small, pay
+epsilon a bounded number of times,
+
+00:19:18.627 --> 00:19:20.497
+and the ledger closes.
+
+00:19:22.007 --> 00:19:28.227
+So, an energy budget. An energy is
+a sum of squares, and a budget is
+
+00:19:28.247 --> 00:19:31.880
+a promise about the total: a
+fact about none of the members,
+
+00:19:31.900 --> 00:19:33.957
+and a fact about all of them.
+
+00:19:34.067 --> 00:19:40.047
+It can be proved, because transforms preserve
+energy and one sharp inequality prices
+
+00:19:40.067 --> 00:19:45.937
+it. It is useful, because arithmetic plants
+copies of the target inside the family.
+
+00:19:46.067 --> 00:19:52.977
+And it is spent by the one rule every square
+obeys: no part of it is ever negative.
+
+00:19:53.100 --> 00:19:55.960
+This film explains how the arguments work.
+
+00:19:55.980 --> 00:19:58.650
+It does not certify that they are correct.
+
+00:19:58.780 --> 00:20:02.970
+That is the work of careful
+readers, and it takes time.

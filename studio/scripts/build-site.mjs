@@ -99,7 +99,7 @@ const NOTES = {
 		src: 'October manuscript, §1.3, §§2.1–2.2 and §3',
 		eq: ['\\mathcal O=\\mathbb Z[\\omega],\\quad \\mathrm N(a+b\\omega)=a^2-ab+b^2', 'A_u(D)=\\sum_{\\mathfrak n}\\mu(\\mathfrak n)\\nu(\\mathfrak n)\\chi_{\\mathfrak n}(u)W(\\mathrm N\\mathfrak n/D)', 'L_K(s,\\chi\\circ\\mathrm N)=L(s,\\chi)\\,L(s,\\chi\\chi_{-3})'],
 	},
-	budget: {src: 'October manuscript, §2.2 and Proposition 3.1', eq: ['\\sum_{0<\\mathrm N(u)\\le H}|A_u(D)|^2\\ll_{\\nu,W,\\vartheta,\\varepsilon} D^{1+\\varepsilon}H,\\qquad H=D^{1+\\vartheta}']},
+	budget: {src: 'October manuscript, §2.2 and Proposition 3.1', more: 'a twenty-minute film on this one estimate: what it means, how it is spent, and how it is proved', eq: ['\\sum_{0<\\mathrm N(u)\\le H}|A_u(D)|^2\\ll_{\\nu,W,\\vartheta,\\varepsilon} D^{1+\\varepsilon}H,\\qquad H=D^{1+\\vartheta}']},
 	eleven: {
 		src: 'October manuscript, §2.2 and §3, equation (3.2)',
 		eq: ['A_{p^6}(D)=A_1(D)+O_W(D/Y)', '|A_1(D)|^2\\ll D^{1+\\varepsilon}H^{5/6}+D^2H^{-1/3}', 'A_1(D)\\ll D^{11/12+5\\vartheta/12+\\varepsilon}']},
@@ -108,7 +108,7 @@ const NOTES = {
 		src: 'October manuscript, §2.3 and §4',
 		eq: ['\\Big(\\frac{1}{\\sqrt m}\\sum_{x\\bmod m}\\Big(\\frac{x}{m}\\Big)e^{2\\pi i x/m}\\Big)^2=\\Big(\\frac{-1}{m}\\Big)', '\\mu(n)\\gamma_{-1}(n)=\\chi_n(-1)G(n)^{-1}\\overline{\\alpha(n)}\\gamma_2(n)']},
 	theta: {src: 'October manuscript, §2.4 and §6', eq: ['c_\\theta(nb^3)=3^{5/2}|b|\\,\\overline{\\chi_n(\\lambda)^2}\\,\\gamma_2(n)', '\\chi_p^{-1}\\chi_p^{-2}=\\chi_p^{-3}=\\chi_p^{3}', '\\sum_{0<\\mathrm N(h)\\ll\\mathcal H}|T_h(X)|^2\\ll(\\mathcal HX)^\\varepsilon\\Big(\\mathcal H+\\frac{\\mathcal H^2}{X}\\Big)']},
-	recursion: {src: 'October manuscript, §2.5 and §5', eq: ['(\\mathcal H\',X\')=\\Big(\\frac{\\mathcal H}{\\mathrm N(b)^3},\\frac{X}{\\mathrm N(b)^3}\\Big),\\qquad \\mathcal H\'\\ll D^{-2\\vartheta}\\mathcal H']},
+	recursion: {src: 'October manuscript, §2.5 and §5', more: 'three chapters on how the energy budget is proved, from Poisson summation to this recursion', eq: ['(\\mathcal H\',X\')=\\Big(\\frac{\\mathcal H}{\\mathrm N(b)^3},\\frac{X}{\\mathrm N(b)^3}\\Big),\\qquad \\mathcal H\'\\ll D^{-2\\vartheta}\\mathcal H']},
 	seven: {src: 'September manuscript, Proposition 2.1 and Part II', eq: ['|J_\\eta(Z)|\\ll_\\eta Z^{C(\\sigma_0)+\\omega},\\qquad |J_\\eta(Z)-f_\\eta(Z)|\\ll_\\eta Z^{C(\\beta_*)-\\sigma}', 'C_{\\mathrm I}(s)=s-\\tfrac23,\\qquad C_{\\mathrm{II}}(s)=s-\\tfrac{11}{16}']},
 	back: {src: 'October manuscript, §3 and Corollary 1.2', eq: ['\\sup_{\\substack{1\\le q\\le x\\\\(a,q)=1}}\\Big|\\pi(x;q,a)-\\frac{1}{\\varphi(q)}\\int_2^x\\frac{dt}{\\log t}\\Big|\\ll x^{11/12}\\log x']},
 	consequences: {src: 'September manuscript, corollary on least nonresidues; October manuscript, §1', eq: ['n(p)\\le C(\\log p)^A']},
@@ -152,7 +152,7 @@ const reading = chapters
 <summary><span class="n">${c.index || '·'}</span><span class="c">${esc(c.title)}</span><span class="t">${mmss(c.start)}</span></summary>
 <div class="body">
 <p class="src">${esc(NOTES[c.id].src)}</p>
-${ps.map((p) => `<p><button type="button" class="seek" data-t="${p.start.toFixed(2)}" aria-label="Play from ${mmss(p.start)}">${mmss(p.start)}</button> ${esc(p.text)}</p>`).join('\n')}
+${NOTES[c.id].more ? `<p class="more">Go deeper: <a href="../energy/">The Energy Budget</a>, ${esc(NOTES[c.id].more)}.</p>\n` : ''}${ps.map((p) => `<p><button type="button" class="seek" data-t="${p.start.toFixed(2)}" aria-label="Play from ${mmss(p.start)}">${mmss(p.start)}</button> ${esc(p.text)}</p>`).join('\n')}
 ${eqs}
 </div>
 </details>`;
@@ -212,6 +212,7 @@ summary .t{color:var(--mist);font-variant-numeric:tabular-nums;font-size:15px}
 summary:focus-visible{outline:2px solid var(--gilt);outline-offset:2px}
 .body{display:grid;gap:14px;padding:0 0 24px 56px;max-width:78ch;min-width:0}
 .src{color:var(--mist);font-style:italic;font-size:15px}
+.more{border-left:2px solid var(--gilt);padding-left:12px;font-size:16px}
 .seek{all:unset;cursor:pointer;color:var(--gilt);font-variant-numeric:tabular-nums;font-size:14px;margin-right:6px}
 .seek:focus-visible{outline:2px solid var(--gilt)}
 .eq{overflow-x:auto;padding:6px 0;color:var(--paper)}
@@ -237,7 +238,7 @@ ${chapterNav}
 </ol></nav>
 </section>
 <div class="facts">
-<a href="${v(VIDEO)}">Download the MP4</a><a href="${v('transcript.txt')}">Transcript</a><a href="${v('subtitles.srt')}">Captions (SRT)</a><a href="${v('chapters.json')}">Chapter times</a><a href="../">First edition</a>
+<a href="${v(VIDEO)}">Download the MP4</a><a href="${v('transcript.txt')}">Transcript</a><a href="${v('subtitles.srt')}">Captions (SRT)</a><a href="${v('chapters.json')}">Chapter times</a><a href="../">First edition</a><a href="../energy/">The Energy Budget: a full film on chapter 4</a>
 </div>
 <p class="note">This film explains the arguments in two manuscripts released by OpenAI. It does not verify them; whether the proofs are correct is for careful readers to settle. Figures in the film are tagged as computed values, schematic, or claimed in the manuscript.</p>
 <section aria-labelledby="read">
